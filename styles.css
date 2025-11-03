@@ -108,3 +108,15 @@ nav a:hover {
 }
 
 
+#project-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-3);
+  padding: var(--space-8);
+  max-width: 100%;
+}
+.project-card {
+  background-color: white;
+  overflow: hidden;
+
+}
