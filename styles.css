@@ -237,14 +237,50 @@ nav a:hover {
   padding: var(--space-9) var(--space-10);
   gap: var(--space-3);
 }
-.emoji-list-container {
-
+#emoji-list-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
 }
 .emoji-list {
   display: flex;
   flex-direction: row;
   align-items: center;
   padding: var(--space-1) var(--space-3);
-  gap: var(--space-2);
   background-color: var(--text-tertiary);
+  width: fit-content;
+  gap: var(--space-2);
+}
+.emoji-list:nth-child(1) {
+  transform: translateX(0px) rotate(-2deg);
+  margin-bottom: 17px;
+}
+.emoji-list:nth-child(2) {
+  transform: translate(30px) rotate(1.5deg);
+  margin-bottom: 12px;
+}
+.emoji-list:nth-child(3) {
+  transform: translate(-20px) rotate(-1deg);
+  margin-bottom: 0x;
+}
+.emoji-list:nth-child(4) {
+  transform: translate(15px) rotate(-2deg);
+  margin-bottom: 10px;
+}
+.emoji-list:nth-child(5) {
+  transform: translate(-12px) rotate(4deg);
+  margin-top: 10px;
+}
+/*comment*/
+
+/*protos*/
+#pr1-protos {
+  background-color: var(--bg-primary);
+  display: flex;
+  flex-direction: column;
+  padding: var(--space-9) var(--space-10);
+  gap: var(--space-3);
+}
+#pr1-protos h2:nth-child(2) {
+  text-align: right;
 }
