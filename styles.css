@@ -1,28 +1,29 @@
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@400;700&family=Work+Sans:wght@400;500;600&display=swap');
-/* ==============================================
+@import url('https://fonts.googleapis.com/css2?family=Gloock&family=Outfit:wght@300;400;700&display=swap');/* ==============================================
                 GLOBAL STYLES
 ============================================== */
 :root {
 /* Typography */
---font-heading: 'Fraunces', serif;
---font-content: 'Work Sans', sans-serif;
+--font-heading: 'Gloock', serif;
+--font-content: 'Outfit', sans-serif;
 
---font-size-h1: 3rem;
---font-size-h2: 2rem;
+--font-size-h1: 3.5rem;
+--font-size-h2: 2.5rem;
 --font-size-h3: 1.5rem;
 --font-size-h4: 1rem;
 
---font-size-content-xl: 1.75rem;
---font-size-content-lg: 1.25rem;
---font-size-content-md: 1rem;
---font-size-content-sm: 0.875rem;
+--font-size-content-xl: 2rem;
+--font-size-content-lg: 1.5rem;
+--font-size-content-md: 1.125rem;
+--font-size-content-sm: 1rem;
 
 /*color theme */
---bg-primary: #E7E3E3;
---bg-secondary: #3DD18C;
---text-primary: #4A3624;
---text-secondary: #50463E;
---text-tertiary: #885733;
+--bg-primary: #F1F2F1;
+--bg-secondary: #20413A;
+--text-primary: #20413A;
+--text-secondary: #344340;
+--text-tertiary: #F8D0CF;
+--text-inverted: #FFFFFF;
+--accent: #FF636B;
 
   /* Spacing scale */
   --space-1: 0.25rem;
@@ -34,6 +35,8 @@
   --space-7: 3rem;
   --space-8: 3.75rem;
   --space-9: 4.5rem;
+  --space-10: 12.5rem;
+  --space-11: 27rem;
 }
 
 a {
@@ -55,22 +58,34 @@ h1, h2, h3, h4 {
     font-weight: 300;
 }
 
+/* reset all spacing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* font size -> headers */
 h1 {font-size: var(--font-size-h1);}
 h2 {font-size: var(--font-size-h2);}
 h3 {font-size: var(--font-size-h3);}
 h4 {font-size: var(--font-size-h4);}
 
-.text-xl {font-size: var(--font-size-content-xl);}
-.text-lg {font-size: var(--font-size-content-lg);}
-.text-md {font-size: var(--font-size-content-md);}
-.text-sm {font-size: var(--font-size-content-sm);}
+/* content size + weight */
+.text-xl {font-size: var(--font-size-content-xl); font-weight: 350}
+.text-lg {font-size: var(--font-size-content-lg); font-weight: 350;}
+.text-md {font-size: var(--font-size-content-md); font-weight: 350}
+.text-sm {font-size: var(--font-size-content-sm); font-weight: 350}
 
 .bg-primary {background-color: var(--bg-primary);}
 .bg-secondary {background-color: var(--bg-secondary);}
 
+/* text color */
 .text-primary {color: var(--text-primary);}
 .text-secondary {color: var(--text-secondary);}
 .text-tertiary {color: var(--text-tertiary);}
+.text-inverted {color: var(--text-inverted)}
+.text-accent {color: var(--accent);}
 
 /* spacing */
 .m-1 {margin: var(--space-1);}
@@ -91,7 +106,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: var(--space-1) var(--space-8);
+  padding: var(--space-4) var(--space-8);
 }
 /* link container */
 nav ul {
@@ -104,7 +119,7 @@ nav ul {
 /* links */
 nav a {
   font-size: var(--font-size-content-lg);
-  color: var(--text-tertiary);
+  color: var(--accent);
   text-decoration: none;
 }
 nav a:hover {
@@ -178,10 +193,58 @@ nav a:hover {
 /* ==============================================
                 PR1_QUESTIONNAIRE
 ============================================== */
+/* hero */
 #pr1-hero {
   padding: var(--space-8);
 }
+/* context */
 #pr1-context {
-  background-color: white;
-  padding: var(--space-8);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  padding: var(--space-9) var(--space-10);
+  background-color: var(--bg-primary);
+  align-items: center;
+}
+#pr1-context p {
+  width: 700px;
+}
+#pr1-context h2 {
+  width: 700px;
+}
+/* initiative */
+#pr1-initiative {
+  padding: var(--space-9) var(--space-10);
+  background-color: var(--bg-secondary);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  align-items: center;
+}
+#pr1-initiative p {
+  font-weight: 150;
+  width: 700px;
+}
+#pr1-initiative strong {
+  font-weight: 700px;
+}
+/* disaient */
+#pr1-disaient {
+  background-color: var(--bg-primary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--space-9) var(--space-10);
+  gap: var(--space-3);
+}
+.emoji-list-container {
+
+}
+.emoji-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: var(--space-1) var(--space-3);
+  gap: var(--space-2);
+  background-color: var(--text-tertiary);
 }
