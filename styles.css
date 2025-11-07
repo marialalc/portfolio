@@ -284,3 +284,49 @@ nav a:hover {
 #pr1-protos h2:nth-child(2) {
   text-align: right;
 }
+.prototype-image {
+  width: 100%;
+  height: auto; /* Keeps proportions */
+}
+.bubble {
+  background-color: white;
+  padding: var(--space-4);
+  font-size: var(--font-size-content-md);
+  width: 350px;
+  border-radius: 32px 32px 32px 2px;
+  box-shadow: 8px 8px 0px rgb(74, 91, 87);
+}
+
+
+/* naviguer */
+#pr1-naviguer {
+  position: relative;
+  background-color: var(--bg-primary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--space-9) var(--space-10);
+  gap: var(--space-3);
+}
+.image-with-annotations {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+}
+.image-naviguer-1 {
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+}
+#bubble-naviguer-1 {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  position: absolute;
+  top: 20%;
+  left: -15%;
+  width: 280px;
+  border-radius: 32px 2px 32px 32px;
+}
+#bubble-naviguer-1.visible {
+  opacity: 1;
+}
