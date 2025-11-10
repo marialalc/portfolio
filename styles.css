@@ -106,7 +106,7 @@ h4 {font-size: var(--font-size-h4);}
 .bubble {
   background-color: white;
   padding: var(--space-4);
-  font-size: var(--font-size-content-md);
+  font-size: var(--font-size-content-sm);
   border-radius: 32px 32px 32px 2px;
   box-shadow: 8px 8px 0px rgb(74, 91, 87);
   line-height: var(--line-height-normal);
@@ -243,6 +243,7 @@ nav a:hover {
 #pr1-initiative strong {
   font-weight: 700px;
 }
+
 /* disaient */
 #pr1-disaient {
   background-color: var(--bg-primary);
@@ -285,6 +286,15 @@ nav a:hover {
   margin-bottom: 10px;
 }
 
+/* persona */
+#pr1-persona {
+  background-color: var(--bg-primary);
+  display: flex;
+  flex-direction: column;
+  padding: var(--space-9) var(--space-10);
+  gap: var(--space-3);
+}
+
 /*comment*/
 #pr1-comment {
   background-color: var(--bg-primary);
@@ -292,6 +302,40 @@ nav a:hover {
   flex-direction: column;
   padding: var(--space-9) var(--space-10);
   gap: var(--space-3);
+}
+.hypothesis-row-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+.problem-hypothesis-row {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-4);
+  align-items: center;
+}
+.problem {
+  flex: 1;
+  text-align: left;
+}
+.hypothesis-card {
+  flex: 2;
+  background-color: white;
+  padding: var(--space-3);
+  border-left: 4px solid var(--accent);
+}
+.hypothesis-label {
+  font-size: var(--font-size-content-sm);
+  color: var(--text-secondary);
+}
+.hypothesis-name {
+  font-size: var(--font-size-content-sm);
+  font-weight: 700;
+  color: var(--text-secondary);
+  margin-bottom: var(--space-2);
+}
+.hypothesis-text {
+  line-height: var(--line-height-normal);
 }
 
 /*protos*/
