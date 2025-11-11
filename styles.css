@@ -295,7 +295,7 @@ nav a:hover {
   gap: var(--space-3);
 }
 
-/*comment*/
+/*comment pourrions nous*/
 #pr1-comment {
   background-color: var(--bg-primary);
   display: flex;
@@ -317,16 +317,24 @@ nav a:hover {
 .problem {
   flex: 1;
   text-align: left;
+  font-size: var(--font-size-content-lg);
 }
 .hypothesis-card {
   flex: 2;
   background-color: white;
   padding: var(--space-3);
   border-left: 4px solid var(--accent);
+  max-width: 520px;
+}
+.label-title-row {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
 }
 .hypothesis-label {
   font-size: var(--font-size-content-sm);
   color: var(--text-secondary);
+  font-weight: 300;
 }
 .hypothesis-name {
   font-size: var(--font-size-content-sm);
@@ -354,7 +362,7 @@ nav a:hover {
   height: auto;
 }
 
-/*comment*/
+/*tests*/
 #pr1-tests {
   background-color: var(--bg-primary);
   display: flex;
@@ -412,10 +420,6 @@ nav a:hover {
   transform: translateY(0);
 }
 
-#pr1-impact {
-  height: 1200px;
-}
-
 /*repondre*/
 #pr1-repondre {
   position: relative;
@@ -432,11 +436,30 @@ nav a:hover {
   height: auto;
 }
 
-/*comment*/
+/*lesson*/
+#pr1-lesson {
+  background-color: var(--bg-primary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--space-9) var(--space-10);
+  gap: var(--space-3);
+}
+.featured {
+  font-size: 2.3rem;
+  font-family: 'Gloock';
+  background-color: white;
+  display: flex;
+  padding: var(--space-7) var(--space-6);
+  border-left: 6px solid var(--accent);
+}
+
+/*impact*/
 #pr1-impact {
   background-color: var(--bg-primary);
   display: flex;
   flex-direction: column;
   padding: var(--space-9) var(--space-10);
   gap: var(--space-3);
+    height: 900px;
 }
