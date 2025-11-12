@@ -53,16 +53,16 @@ body {
     font-size: var(--font-size-content-md);
     background-color: var(--bg-primary);
     color: var(--text-secondary);
-    line-height: var(--line-height-normal);
+    line-height: var(--line-height-relaxed);
+    font-weight: 350;
 }
-
 h1, h2, h3, h4 {
     font-family: var(--font-heading);
     margin: 0 0 var(--space-2) 0;
     font-weight: 300;
+    color: var(--text-primary);
 }
 
-/* reset all spacing */
 * {
   margin: 0;
   padding: 0;
@@ -76,10 +76,10 @@ h3 {font-size: var(--font-size-h3);}
 h4 {font-size: var(--font-size-h4);}
 
 /* content size + weight */
-.text-xl {font-size: var(--font-size-content-xl); font-weight: 350; line-height: var(--line-height-relaxed);}
-.text-lg {font-size: var(--font-size-content-lg); font-weight: 350; line-height: var(--line-height-relaxed);}
-.text-md {font-size: var(--font-size-content-md); font-weight: 350; line-height: var(--line-height-relaxed);}
-.text-sm {font-size: var(--font-size-content-sm); font-weight: 350; line-height: var(--line-height-relaxed);}
+.text-xl {font-size: var(--font-size-content-xl); font-weight: 400; line-height: var(--line-height-normal);}
+.text-lg {font-size: var(--font-size-content-lg); font-weight: 350; line-height: var(--line-height-normal);}
+.text-md {font-size: var(--font-size-content-md);}
+.text-sm {font-size: var(--font-size-content-sm);}
 
 .bg-primary {background-color: var(--bg-primary);}
 .bg-secondary {background-color: var(--bg-secondary);}
@@ -211,6 +211,7 @@ nav a:hover {
 #pr1-hero {
   padding: var(--space-8);
 }
+
 /* context */
 #pr1-context {
   display: flex;
@@ -226,6 +227,7 @@ nav a:hover {
 #pr1-context h2 {
   width: 700px;
 }
+
 /* initiative */
 #pr1-initiative {
   padding: var(--space-9) var(--space-10);
@@ -234,14 +236,6 @@ nav a:hover {
   flex-direction: column;
   gap: var(--space-3);
   align-items: center;
-}
-#pr1-initiative p {
-  font-weight: 150;
-  width: 700px;
-  line-height: var(--line-height-normal);
-}
-#pr1-initiative strong {
-  font-weight: 700px;
 }
 
 /* disaient */
@@ -291,9 +285,61 @@ nav a:hover {
   background-color: var(--bg-primary);
   display: flex;
   flex-direction: column;
-  padding: var(--space-9) var(--space-10);
+  gap: var(--space-3);
+  padding: var(--space-1) var(--space-10);
+}
+.persona-card {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  padding: var(--space-7);
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: var(--space-7);
+}
+.persona-img {
+  width: 200px;
+  flex-shrink: 0;
+  object-fit: contain;
+}
+.persona-card-text {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+  flex: 1;
+}
+.persona-title-bio {
+  display: flex;
+  flex-direction: column;
   gap: var(--space-3);
 }
+.persona-columns {
+  display: flex;
+  gap: var(--space-4);
+}
+.persona-columns > div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  line-height: var(--line-height-normal);
+}
+.persona-columns ul {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  list-style: none;
+  padding: 0;
+}
+.friction-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+
+
 
 /*comment pourrions nous*/
 #pr1-comment {
@@ -316,8 +362,6 @@ nav a:hover {
 }
 .problem {
   flex: 1;
-  text-align: left;
-  font-size: var(--font-size-content-lg);
 }
 .hypothesis-card {
   flex: 2;
@@ -332,14 +376,10 @@ nav a:hover {
   gap: var(--space-2);
 }
 .hypothesis-label {
-  font-size: var(--font-size-content-sm);
-  color: var(--text-secondary);
   font-weight: 300;
 }
 .hypothesis-name {
-  font-size: var(--font-size-content-sm);
   font-weight: 700;
-  color: var(--text-secondary);
   margin-bottom: var(--space-2);
 }
 .hypothesis-text {
