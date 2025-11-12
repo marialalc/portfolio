@@ -338,7 +338,26 @@ nav a:hover {
   gap: var(--space-2);
 }
 
-
+/*objectives*/
+#pr1-objectives {
+  background-color: var(--bg-primary);
+  display: flex;
+  flex-direction: column;
+  padding: var(--space-9) var(--space-10);
+  gap: var(--space-5);
+  align-items: center;
+}
+.emoji-naked-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+.emoji-naked-list > li {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-3);
+}
 
 
 /*comment pourrions nous*/
@@ -410,6 +429,16 @@ nav a:hover {
   padding: var(--space-9) var(--space-10);
   gap: var(--space-3);
 }
+
+/*resultats*/
+#pr1-results {
+  background-color: var(--bg-primary);
+  display: flex;
+  flex-direction: column;
+  padding: var(--space-9) var(--space-10);
+  gap: var(--space-3);
+}
+
 
 /* naviguer */
 #pr1-naviguer {
