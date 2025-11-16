@@ -28,8 +28,10 @@
      <section id="pr1-context">
          <div class="narrow-content">
             <h2><span class="text-accent">Pourquoi</span> ça devait être fait</h2>
-            <p>Luci aide les Canadiens à adopter des modes de vie plus sains. Une fonctionalité clé est un <strong>questionnaire d’auto-évaluation</strong> où les utilisateurs rapportent leurs habitudes dans trois domaines : l’activité physique, l’alimentation et la stimulation intellectuelle.</p>
-            <p>Ces questionnaires étaient cruciaux pour aider les utilisateurs à comprendre leurs prochaines étapes. Mais ils étaient longs, ambigus et difficiles à comprendre. En tant que première étape du parcours, ils ralentissaient et décourageaient les utilisateurs.</p>
+            <div>
+               <p>Luci aide les Canadiens à adopter des modes de vie plus sains. Une fonctionalité clé est un <strong>questionnaire d’auto-évaluation</strong> où les utilisateurs rapportent leurs habitudes dans trois domaines : l’activité physique, l’alimentation et la stimulation intellectuelle.</p>
+               <p>Ces questionnaires étaient cruciaux pour aider les utilisateurs à comprendre leurs prochaines étapes. Mais ils étaient longs, ambigus et difficiles à comprendre. En tant que première étape du parcours, ils ralentissaient et décourageaient les utilisateurs.</p>
+            </div>
          </div>
      </section>
 
@@ -105,18 +107,68 @@
      <section id="pr1-hmw">
       <h2>Comment pourrions nous...</h2>
       <div class="row">
-         <div class="post-it-red"><p>Réduire la charge cognitive?</p></div>
-         <div class="post-it-red"><p>Réduire la charge cognitive?</p></div>
-         <div class="post-it-red"><p>Réduire la charge cognitive?</p></div>
+         <div class="post-it-red"><p>Réduire la <strong>charge mentale</strong> pour déclarer ses activités?</p></div>
+         <div class="post-it-red"><p>Réduire la charge sur la <strong>mémoire</strong> en demandant moins de détails, sans compromettre la qualité des données?</p></div>
+         <div class="post-it-red"><p>Réduire l'ambiguïté et augmenter la <strong>fluidité</strong> pour les personnes moins à l'aise avec les interfaces?</p></div>
+      </div>
+      <p>Les hypothèses suivantes nous permettraient de voir si on peut résoudre le problème.</p>
+      <div class="column">
+         <div class="img-card">
+            <img src="Images/basket.png" alt="panier d'épicerie" class="card-img"/>
+            <div class="img-card-content">
+               <div class="text-sm">Hypothèse 1</div>
+               <p><strong>Panier d'épicerie:</strong> Sélectionner dans une liste préétablie d'activités plutôt que de répondre individuellement réduirait la charge mentale associée au questionnaire.</p>
+            </div>
+         </div>
+         <div class="img-card">
+            <img src="Images/basket.png" alt="panier d'épicerie" class="card-img"/>
+            <div class="img-card-content">
+               <div class="text-sm">Hypothèse 2</div>
+               <p><strong>Simplifier la saisie:</strong> Des fréquences et des minutes par semaine pour tous les domaines seraient moins taxantes sur la mémoire des utilisateurs que des portions et des minutes par jour.</p>
+            </div>
+         </div>
+         <div class="img-card">
+            <img src="Images/basket.png" alt="panier d'épicerie" class="card-img"/>
+            <div class="img-card-content">
+               <div class="text-sm">Hypothèse 3</div>
+               <p><strong>Language naturel vs. choix multiples:</strong> En alientation, des phrases trouées avec plus de précision seraient plus faciles à remplir que des choix multiples.</p>
+            </div>
+         </div>
       </div>
      </section>
 
-     <section id="pr1-protos">
-      <h2>De l'hypothese...</h2>
-      <img src="Images/questionnaires_protos.png" class="prototype-image" alt="Premiers prototypes"/>
-      <h2>...au prototype.</h2>
-      <div class="bubble"><strong>Catalogue et panier d’activités</strong> : un catalogue d’activités avec une barre de recherche permet aux utilisateurs d’ajouter facilement leurs activités.</div>
-     </section>
+
+     <section class="pr1-hypothesis-protos">
+      <div class="hypothesis-left">
+         <div class="hypothesis-text active" data-index="0">
+            <img src="Images/basket.png" alt="panier d'épicerie"/>
+            <h3>Panier d'épicerie</h3>
+            <p>Sélectionner dans une liste préétablie d'activités plutôt que de répondre individuellement réduirait la charge mentale associée au questionnaire.</p>
+            <p>Nous avons créé un catalogue d'activités avec une fonction de recherche et la possibilité d'ajouter des activités au panier.</p>
+         </div>
+
+         <div class="hypothesis-text" data-index="1">
+            <img src="Images/basket.png" alt="simplification"/>
+            <h3>Simplifier la saisie</h3>
+            <p>Des fréquences et des minutes par semaine pour tous les domaines seraient moins taxantes sur la mémoire.</p>
+            <p>Au lieu de demander des détails précis, nous avons opté pour des fourchettes.</p>
+         </div>
+
+         <div class="hypothesis-text" data-index="2">
+            <img src="Images/basket.png" alt="language"/>
+            <h3>Language naturel</h3>
+            <p>Des phrases trouées avec un langage naturel seraient plus intuitives.</p>
+            <p>Nous avons testé des phrases à compléter versus des menus déroulants.</p>
+         </div>
+      </div>
+
+      <div class="hypothesis-right">
+         <img src="Images/H1_panier_proto.png" alt="Prototype panier">
+         <img src="Images/H2_input_proto.png" alt="Prototype saisie">
+         <img src="Images/h3_language_proto.png" alt="Prototype language">
+      </div>
+   </section>
+
 
      <section id="pr1-tests">
       <h2>L'heure de la vérité</h2>
