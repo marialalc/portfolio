@@ -471,7 +471,7 @@ nav a:hover {
 .hypothesis-right img {
   width: 75%;
   height: auto;
-  min-height: 100vh; /* Each image at least full viewport */
+  min-height: 100vh;
   object-fit: contain;
 }
 .hypothesis-right img:nth-child(3) {
@@ -535,6 +535,62 @@ nav a:hover {
   flex-direction: column;
   padding: var(--space-9) var(--space-10);
   gap: var(--space-3);
+}
+.tests {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-9);
+}
+.tests-row {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-8);
+}
+.test-left {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+.title-row {
+  display: flex;
+  gap: var(--space-3);
+  align-items: center;
+}
+.title-row h3 {
+  margin: 0;
+}
+.title-row img {
+  width: 60px;
+}
+.test-right {
+  display: flex;
+  flex-direction: column;
+}
+.test-row-false {
+  display: flex;
+  flex-direction: column;
+  background-color: #F8D0CF;
+  padding: var(--space-6) var(--space-4);
+  gap: var(--space-4);
+  border-radius: 12px;
+}
+.comments {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+  align-items: center;
+}
+.comment-bubble {
+  background-color: white;
+  display: flex;
+  padding: var(--space-3);
+  max-width: 350px;
+}
+.comments :nth-child(1) {
+    border-radius: 20px 20px 2px 20px;
+}
+.comments :nth-child(2) {
+    border-radius: 20px 20px 20px 2px;
 }
 
 
