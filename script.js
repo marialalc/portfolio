@@ -22,3 +22,26 @@ window.addEventListener('scroll', function() {
 
 // Set initial state
 textBlocks[0].classList.add('active');
+
+gsap.registerPlugin(ScrollTrigger);
+
+// Animate bubbles in both sections
+const sections = ['#pr1-naviguer', '#pr1-repondre'];
+
+sections.forEach(sectionId => {
+  const bubbles = document.querySelectorAll(`${sectionId} .bubble`);
+
+  bubbles.forEach((bubble, index) => {
+    gsap.to(bubble, {
+      opacity: 1,
+      y: 0,
+      duration: 0.6,
+      delay: index * 0.3, // Stagger by 0.3s
+      scrollTrigger: {
+        trigger: sectionId,
+        start: 'top 70%',
+        toggleActions: 'play none none reverse'
+      }
+    });
+  });
+});
