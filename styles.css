@@ -216,6 +216,7 @@ nav a:hover {
   position: relative;
   width: 110%;
 }
+
 /* context */
 #pr1-context {
   display: flex;
@@ -422,6 +423,14 @@ nav a:hover {
   display: flex;
   flex-direction: column;
   gap: var(--space-4);
+}
+
+#hypothesis-intro {
+  display: flex;
+  flex-direction: column;
+  padding: var(--space-8) var(--space-10);
+  gap: var(--space-6);
+  align-items: center;
 }
 
 
@@ -695,4 +704,91 @@ nav a:hover {
   padding: var(--space-9) var(--space-10);
   gap: var(--space-3);
     height: 900px;
+}
+
+
+
+/* ==============================================
+                MEDIA QUERIES - MOBILE
+============================================== */
+@media (max-width: 768px) {
+  :root {
+    --font-size-h1: 2rem;
+    --font-size-h2: 1.75rem;
+    --font-size-h3: 1.5rem;
+
+    --font-size-content-xl: 1.5rem;
+    --font-size-content-lg: 1.25rem;
+    --font-size-content-md: 1.1rem;
+
+    --space-9: 2.5rem;
+    --space-10: 1.5rem;
+  }
+
+  header {
+    padding: var(--space-3) var(--space-4);
+    flex-direction: column;
+    gap: var(--space-3);
+  }
+
+  nav ul {
+    gap: var(--space-3)
+  }
+
+  #pr1-hero {
+    padding: var(--space-6) var(--space-4);
+  }
+  #hero-image img {
+    width: 100%;
+  }
+
+  #pr1-context,
+  #pr1-initiative,
+  #pr1-users,
+  #pr1-objectives,
+  #pr1-hmw,
+  #pr1-tests,
+  #pr1-naviguer,
+  #pr1-repondre,
+  #pr1-lesson,
+  #pr1-impact {
+    padding: var(--space-6) var(--space-4);
+  }
+
+.narrow-content {
+  max-width: 100%;
+}
+
+#pr1-persona {
+    padding: var(--space-6) var(--space-4);
+  }
+
+  .persona-card {
+    flex-direction: column;
+    padding: var(--space-5);
+    gap: var(--space-5);
+  }
+
+  .persona-img {
+    width: 150px;
+    align-self: center;
+  }
+
+  .persona-columns {
+    flex-direction: column;
+    gap: var(--space-5);
+  }
+
+   #pr1-hmw .row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .post-it-red {
+    width: 90%;
+    max-width: 300px;
+  }
+
+
+
 }

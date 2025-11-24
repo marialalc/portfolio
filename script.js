@@ -1,31 +1,47 @@
+// ============================================
+// HYPOTHESIS SECTION: Text changes as you scroll
+// ============================================
 const images = document.querySelectorAll('.hypothesis-right img');
 const textBlocks = document.querySelectorAll('.hypothesis-text');
 
-// Detect scroll on the whole window, not just the container
-window.addEventListener('scroll', function() {
-  const viewportCenter = window.scrollY + window.innerHeight / 2;
+
+function throttle(func, wait) {
+  let timeout;
+  return function() {
+    if (!timeout) {
+      timeout = setTimeout(() => {
+        func();
+        timeout = null;
+      }, wait);
+    }
+  };
+}
+
+function updateActiveText() {
+  const scrollPosition = window.scrollY + window.innerHeight / 2;
 
   images.forEach((img, index) => {
-    const imgTop = img.offsetTop;
-    const imgBottom = imgTop + img.clientHeight;
+    const rect = img.getBoundingClientRect();
+    const imgTop = rect.top + window.scrollY;
+    const imgBottom = imgTop + img.offsetHeight;
 
-    // Check if image center is in viewport center
-    if (viewportCenter >= imgTop && viewportCenter <= imgBottom) {
-      // Remove active from all
+    if (scrollPosition >= imgTop && scrollPosition <= imgBottom) {
       textBlocks.forEach(text => text.classList.remove('active'));
-
-      // Add active to matching text
       textBlocks[index].classList.add('active');
     }
   });
-});
+}
 
-// Set initial state
+window.addEventListener('scroll', throttle(updateActiveText, 100));
+
+
 textBlocks[0].classList.add('active');
 
+// ============================================
+// BUBBLE ANIMATIONS
+// ============================================
 gsap.registerPlugin(ScrollTrigger);
 
-// Animate bubbles in both sections
 const sections = ['#pr1-naviguer', '#pr1-repondre'];
 
 sections.forEach(sectionId => {
@@ -36,7 +52,7 @@ sections.forEach(sectionId => {
       opacity: 1,
       y: 0,
       duration: 0.6,
-      delay: index * 0.3, // Stagger by 0.3s
+      delay: index * 0.3,
       scrollTrigger: {
         trigger: sectionId,
         start: 'top 70%',

@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <title>questionnaires luci</title>
   <link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
@@ -102,7 +103,6 @@
             <p>Les questionnaires sont indispensables pour que les utilisateurs Luci orientent leurs efforts. Nous avons donc porté une attention particulière au taux de complétion et au temps de complétion. De plus, nous savions que l'expérience actuelle n'était pas optimale et causait de a frustration.</p>
             <ul class="emoji-naked-list">
                <li class="text-lg"><div>🎯</div><div>Réduire le <strong>temps</strong> de complétion</div></li>
-               <li class="text-lg"><div>🎯</div><div>Augmenter le <strong>taux</strong> de complétion</div></li>
                <li class="text-lg"><div>🎯</div><div>Améliorer l'<strong>expérience</strong> des questionnaires</div></li>
             </ul>
          </div>
@@ -115,31 +115,33 @@
          <div class="post-it-red"><p>Réduire la charge sur la <strong>mémoire</strong> en demandant moins de détails, sans compromettre la qualité des données?</p></div>
          <div class="post-it-red"><p>Réduire l'ambiguïté et augmenter la <strong>fluidité</strong> pour les personnes moins à l'aise avec les interfaces?</p></div>
       </div>
-      <p>Les hypothèses suivantes nous permettraient de voir si on peut résoudre le problème.</p>
      </section>
 
+     <section id="hypothesis-intro">
+      <p>Les hypothèses suivantes nous permettraient de voir si on peut résoudre le problème.</p>
+     </section>
 
      <section class="pr1-hypothesis-protos">
       <div class="hypothesis-left">
          <div class="hypothesis-text active" data-index="0">
             <img src="Images/basket.png" alt="panier d'épicerie"/>
             <h3>Panier d'épicerie</h3>
-            <p>Sélectionner dans une liste préétablie d'activités plutôt que de répondre individuellement réduirait la charge mentale associée au questionnaire.</p>
-            <p>Nous avons créé un catalogue d'activités avec une fonction de recherche et la possibilité d'ajouter des activités au panier.</p>
+            <p>Remplacer la séquence de questions oui/non par une liste d’activités à sélectionner le temps passé à répondre : l’utilisateur évaluerait toutes les options en un seul coup d'oeil.</p>
+            <p>Nous avons créé un catalogue d'activités avec une fonction de recherche et la possibilité d'ajouter des activités au "panier" avant de passer à la prochaine étape.</p>
          </div>
 
          <div class="hypothesis-text" data-index="1">
             <img src="Images/basket.png" alt="simplification"/>
-            <h3>Simplifier la saisie</h3>
-            <p>Des fréquences et des minutes par semaine pour tous les domaines seraient moins taxantes sur la mémoire.</p>
-            <p>Au lieu de demander des détails précis, nous avons opté pour des fourchettes.</p>
+            <h3>Saisie simplifiée</h3>
+            <p>Des fréquences et des minutes hebdomadaires, plutôt que des minutes et des portions par jour, seraient moins taxantes pour la mémoire. Les utilisateurs n'auraient pas besoin de se rappeller d'autant de détails.</p>
+            <p>Nous avons volontairement sacrifié un niveau de précision afin de simplifier la tâche : comme nos scores n’exigent pas un détail quotidien, une estimation hebdomadaire suffit.</p>
          </div>
 
          <div class="hypothesis-text" data-index="2">
             <img src="Images/basket.png" alt="language"/>
             <h3>Language naturel</h3>
             <p>Des phrases trouées avec un langage naturel seraient plus intuitives.</p>
-            <p>Nous avons testé des phrases à compléter versus des menus déroulants.</p>
+            <p>Notre public ayant une faible aisance avec les produits numériques, nous avons testé un mode de réponse par phrase trouée. Nous l'avons comparé à une structure par choix de réponse classique.</p>
          </div>
       </div>
 
@@ -162,40 +164,34 @@
 
       <div class="tests">
          <div class="tests-row">
-            <div class="test-left">
-               <div class="title-row">
-                  <img src="Images/basket.png" alt="simplification"/>
-                  <h3>Panier d'épicerie</h3>
-               </div>
+            <div class="title-row">
+               <img src="Images/basket.png" alt="simplification"/>
+               <h3>Panier d'épicerie</h3>
             </div>
             <div class="test-right">
                <div>✅</div>
-               <p>Cette hypothèse était vraie. électionner dans une liste préétablie d'activités plutôt que de répondre individuellement réduirait la charge</p>
+               <p>Cette hypothèse était <strong>vraie</strong>. Les utilisateurs ont trouvé les activités facilement via la recherche ou la liste. Le temps de complétion était significativement réduit.</p>
             </div>
          </div>
          <div class="tests-row">
-            <div class="test-left">
-               <div class="title-row">
-                  <img src="Images/basket.png" alt="simplification"/>
-                  <h3>Panier d'épicerie</h3>
-               </div>
+            <div class="title-row">
+               <img src="Images/basket.png" alt="simplification"/>
+               <h3>Saisie simplifiée</h3>
             </div>
             <div class="test-right">
                <div>✅</div>
-               <p>Cette hypothèse était vraie. électionner dans une liste préétablie d'activités plutôt que de répondre individuellement réduirait la charge</p>
+               <p>Cette hypothèse était <strong>vraie</strong>. Les utilisateurs n’ont pas eu de difficulté à se souvenir des informations nécessaires pour effectuer une moyenne de fréquences ou de minutes hebdomadaires.</p>
             </div>
          </div>
          <div class="test-row-false">
             <div class="tests-row">
-               <div class="test-left">
-                  <div class="title-row">
-                     <img src="Images/basket.png" alt="simplification"/>
-                     <h3>Panier d'épicerie</h3>
-                  </div>
+               <div class="title-row">
+                  <img src="Images/basket.png" alt="simplification"/>
+                  <h3>Language naturel</h3>
                </div>
                <div class="test-right">
                   <div>❌</div>
-                  <p>Cette hypothèse était vraie. électionner dans une liste préétablie d'activités plutôt que de répondre individuellement réduirait la charge</p>
+                  <p>Cette hypothèse était <strong>fausse</strong>. Le choix multiple a surpassé le langage naturel par sa simplicité, sa familiarité et sa facilité de lecture.</p>
                </div>
             </div>
             <div class="comments">
