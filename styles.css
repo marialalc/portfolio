@@ -742,18 +742,10 @@ nav a:hover {
     width: 100%;
   }
 
-  #pr1-context,
-  #pr1-initiative,
-  #pr1-users,
-  #pr1-objectives,
-  #pr1-hmw,
-  #pr1-tests,
-  #pr1-naviguer,
-  #pr1-repondre,
-  #pr1-lesson,
-  #pr1-impact {
-    padding: var(--space-6) var(--space-4);
-  }
+#pr1-initiative {
+  padding-top: var(--space-8);
+  padding-bottom: var(--space-8);
+}
 
 .narrow-content {
   max-width: 100%;
