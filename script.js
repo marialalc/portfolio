@@ -61,3 +61,22 @@ sections.forEach(sectionId => {
     });
   });
 });
+
+// ============================================
+// TEST ROWS ANIMATIONS
+// ============================================
+const testRows = document.querySelectorAll('.tests-row');
+
+testRows.forEach((row, index) => {
+  gsap.from(row, {
+    opacity: 0,
+    y: 30,
+    duration: 0.6,
+    delay: index * 0.2,
+    scrollTrigger: {
+      trigger: '#pr1-tests',
+      start: 'top 70%',
+      toggleActions: 'play none none reverse'
+    }
+  });
+});
