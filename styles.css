@@ -383,6 +383,17 @@ nav a:hover {
   gap: var(--space-6);
   align-items: center;
 }
+.row {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-5);
+}
+.row > div {
+  flex: 1;
+}
+.row > div:last-child {
+  line-height: var(--line-height-normal);
+}
 .post-it-red{
   width: 250px;
   min-height: 200px;
@@ -497,30 +508,35 @@ nav a:hover {
   gap: var(--space-8);
   align-content: center;
 }
-#test-list-rows {
+.tests {
   display: flex;
   flex-direction: column;
   gap: var(--space-7);
 }
-.row {
+.tests-row {
   display: flex;
   flex-direction: row;
   gap: var(--space-5);
+  background-color: white;
+  padding: var(--space-7);
+  border-radius: 8px;
+  box-shadow: 8px 8px 20px rgb(198, 209, 200);
 }
-.row > div {
-  flex: 1;
+.tests-row-false {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-5);
+  padding: var(--space-7);
 }
-.row > div:last-child {
-  line-height: var(--line-height-normal);
-}
-.red-container {
-  background-color: #F8D0CF;
+.test-row-container {
+  background-color:#20413A;
   display: flex;
   flex-direction: column;
   padding: var(--space-5) var(--space-3);
   border-radius: 8px;
   gap: var(--space-5);
 }
+
 .bubbles {
   display: flex;
   flex-direction: column;
