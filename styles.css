@@ -102,11 +102,13 @@ h4 {font-size: var(--font-size-h4);}
 .m-8 {margin: var(--space-8);}
 .m-9 {margin: var(--space-9);}
 
-.narrow-content {
+
+.container-narrow {
   max-width: 58ch;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }
-
 
 
 /* ==============================================
@@ -219,11 +221,9 @@ nav a:hover {
 
 /* context */
 #pr1-context {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-3);
-  padding: var(--space-9) var(--space-10);
   background-color: var(--bg-primary);
+  padding-top: var(--space-9);
+  padding-bottom: var(--space-9);
   align-items: center;
 }
 #pr1-context div {
@@ -234,25 +234,20 @@ nav a:hover {
 
 /* initiative */
 #pr1-initiative {
-  padding: var(--space-9) var(--space-10);
+  padding-top: var(--space-9);
+  padding-bottom: var(--space-9);
   background-color: var(--bg-secondary);
-  display: flex;
-  flex-direction: column;
   gap: var(--space-3);
-  align-items: center;
 }
 
 /* users */
 #pr1-users {
   background-color: var(--bg-primary);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   padding-top: var(--space-9);
   padding-bottom: var(--space-7);
-  padding-left: var(--space-10);
-  padding-right: var(--space-10);
-  gap: var(--space-3);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
 }
 #emoji-list-container {
   display: flex;
@@ -293,7 +288,7 @@ nav a:hover {
   background-color: var(--bg-primary);
   display: flex;
   flex-direction: column;
-  gap: var(--space-5);
+  gap: var(--space-7);
   padding: 0 var(--space-10);
 }
 .persona-card {
