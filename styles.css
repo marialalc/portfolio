@@ -486,14 +486,12 @@ nav a:hover {
   gap: var(--space-9);
 }
 .hypothesis-right img {
-  width: 75%;
+  width: 130%;
   height: auto;
   min-height: 100vh;
   object-fit: contain;
 }
-.hypothesis-right img:nth-child(3) {
-  width: 130%;
-}
+
 
 
 
@@ -514,7 +512,7 @@ nav a:hover {
 .tests {
   display: flex;
   flex-direction: column;
-  gap: var(--space-8);
+  gap: var(--space-7);
 }
 .tests-row {
   display: flex;
@@ -532,7 +530,8 @@ nav a:hover {
   flex-direction: column;
   border-radius: 8px;
   gap: var(--space-6);
-  padding-bottom: var(--space-5);
+  padding-bottom: var(--space-7);
+  align-items: center;
 }
 .test-row-container .tests-row {
   background-color: transparent;
@@ -563,6 +562,7 @@ nav a:hover {
   flex-direction: column;
   gap: var(--space-5);
   align-items: center;
+  max-width: 250px;
 }
 .comment-bubble {
   background-color: var(--bg-primary);
