@@ -35,7 +35,7 @@
      <section id="pr1-context">
          <div class="container-narrow">
             <h2>Pourquoi ça devait être fait</h2>
-            <div>
+            <div class="paragraphs">
                <p>Luci aide les Canadiens à adopter des modes de vie plus sains. Une fonctionalité clé est un <strong>questionnaire d’auto-évaluation</strong> où les utilisateurs rapportent leurs habitudes dans trois domaines : l’activité physique, l’alimentation et la stimulation intellectuelle.</p>
                <p>Ces questionnaires étaient cruciaux pour aider les utilisateurs à comprendre leurs prochaines étapes. Mais ils étaient longs, ambigus et difficiles à comprendre. En tant que première étape du parcours, ils ralentissaient et décourageaient les utilisateurs.</p>
             </div>
@@ -62,7 +62,7 @@
                <span>⏳</span><span>« C'est trop long à compléter.&nbsp;»</span>
             </div>
             <div class="emoji-list">
-               <span>🤔</span><span>« Combien de portions? Combien de minutes? Je ne me souviens pas.&nbsp;»</span>
+               <span>🤔</span><span>« Combien de portions? De minutes? Je ne me souviens pas.&nbsp;»</span>
             </div>
             <div class="emoji-list">
                <span>🔍</span><span>« Je ne peux pas vérifier mes réponses.&nbsp;»</span>
@@ -75,57 +75,70 @@
 
 <!-- PERSONA -->
       <section id="pr1-persona">
-         <p class="container-narrow">À partir des tests, j'ai également pu dresser un proto-persona.</p>
-         <div class="persona-card">
-            <img src="Images/persona-beatriz.png" class="persona-img" alt="illustration de Beatriz"/>
-            <div class="persona-card-text">
+         <div class="container-medium">
+            <p class="container-narrow">À partir des tests, j'ai également pu dresser un proto-persona.</p>
+
+            <div class="persona-card">
+               <img src="Images/persona-beatriz.png" class="persona-img" alt="illustration de Beatriz"/>
+               <div class="persona-card-text">
                <div class="persona-title-bio">
                   <h2>Beatriz</h2>
-                  <p class="persona-bio">Beatriz, 52 ans, mène une vie bien remplie mais veut prendre soin de sa santé. Elle cherche des outils simples et clairs pour comprendre et améliorer ses habitudes sans se perdre dans la complexité. Peu à l’aise avec les interfaces techniques, elle privilégie les solutions fiables et faciles à utiliser.</p>
+                  <p>Beatriz, 52 ans, mène une vie bien remplie mais veut prendre soin de sa santé. Elle cherche des outils simples et clairs pour comprendre et améliorer ses habitudes sans se perdre dans la complexité. Peu à l'aise avec les interfaces techniques, elle privilégie les solutions fiables et faciles à utiliser.</p>
                </div>
                <div class="persona-columns">
-                  <div class="needs-column">
-                     <div class="needs-title text-lg">Besoins</div>
-                     <ul class="needs-list">
-                        <li>Avoir une vue d’ensemble de ses habitudes actuelles.</li>
-                        <li>Comprendre rapidement où elle doit mettre ses efforts de changement.</li>
-                        <li>Faire confiance à l’évaluation fournie.</li>
+                  <div>
+                     <h4>Besoins</h4>
+                     <ul>
+                     <li>Avoir une vue d'ensemble de ses habitudes actuelles.</li>
+                     <li>Comprendre rapidement où elle doit mettre ses efforts de changement.</li>
+                     <li>Faire confiance à l'évaluation fournie.</li>
                      </ul>
                   </div>
-                  <div class="friction-column">
-                     <div class="friction-title text-lg">Points de friction</div>
-                     <ul class="friction-list">
-                        <li>Submergée par toute l'information disponible en ligne.</li>
-                        <li>Intimidée par les outils complexes.</li>
-                        <li>Manque de temps pour des évaluations trop détaillées.</li>
+                  <div>
+                     <h4>Points de friction</h4>
+                     <ul>
+                     <li>Submergée par toute l'information disponible en ligne.</li>
+                     <li>Intimidée par les outils complexes.</li>
+                     <li>Manque de temps pour des évaluations trop détaillées.</li>
                      </ul>
                   </div>
+               </div>
                </div>
             </div>
          </div>
-      </section>
+</section>
 
 <!-- OBJECTIVES -->
-      <section id="pr1-objectives">
-         <h2>Objectifs</h2>
-         <div class="container-narrow" id="obj-content">
-            <p>Les questionnaires sont indispensables pour que les utilisateurs Luci orientent leurs efforts. Nous avons donc porté une attention particulière au taux de complétion et au temps de complétion. De plus, nous savions que l'expérience actuelle n'était pas optimale et causait de a frustration.</p>
-            <ul class="emoji-naked-list">
-               <li class="text-lg"><div>🎯</div><div>Réduire le <strong>temps</strong> de complétion</div></li>
-               <li class="text-lg"><div>🎯</div><div>Améliorer l'<strong>expérience</strong> des questionnaires</div></li>
-            </ul>
+   <section id="pr1-objectives">
+   <div class="container-narrow">
+      <h2>Objectifs</h2>
+      <p>Les questionnaires sont indispensables pour que les utilisateurs Luci orientent leurs efforts. Nous avons donc porté une attention particulière au taux de complétion et au temps de complétion. De plus, nous savions que l'expérience actuelle n'était pas optimale et causait de la frustration.</p>
+      <ul>
+         <li>🎯 Réduire le <strong>temps</strong> de complétion</li>
+         <li>🎯 Améliorer l'<strong>expérience</strong> des questionnaires</li>
+      </ul>
+   </div>
+   </section>
+
+<!-- HMW -->
+   <section id="pr1-hmw">
+   <div class="container-medium">
+      <h2>Comment pourrions-nous...</h2>
+      <div class="post-it-row">
+         <div class="post-it-red">
+         <p>Réduire la <strong>charge mentale</strong> pour déclarer ses activités?</p>
          </div>
-      </section>
-
-     <section id="pr1-hmw">
-      <h2>Comment pourrions nous...</h2>
-      <div class="row">
-         <div class="post-it-red"><p>Réduire la <strong>charge mentale</strong> pour déclarer ses activités?</p></div>
-         <div class="post-it-red"><p>Réduire la charge sur la <strong>mémoire</strong> en demandant moins de détails, sans compromettre la qualité des données?</p></div>
-         <div class="post-it-red"><p>Réduire l'ambiguïté et augmenter la <strong>fluidité</strong> pour les personnes moins à l'aise avec les interfaces?</p></div>
+         <div class="post-it-red">
+         <p>Réduire la charge sur la <strong>mémoire</strong> en demandant moins de détails, sans compromettre la qualité des données?</p>
+         </div>
+         <div class="post-it-red">
+         <p>Réduire l'ambiguïté et augmenter la <strong>fluidité</strong> pour les personnes moins à l'aise avec les interfaces?</p>
+         </div>
       </div>
-     </section>
+   </div>
+   </section>
 
+<!-- HYPOTHESES -->
      <section id="hypothesis-intro">
       <p class="container-narrow">Les hypothèses suivantes nous permettraient de voir si on peut résoudre le problème.</p>
      </section>
@@ -161,60 +174,64 @@
       </div>
    </section>
 
+<!-- TESTS -->
+   <section id="pr1-tests">
+      <div class="container-medium">
+         <div class="tests-intro">
+            <h2>L'heure de la vérité</h2>
+            <p>Pour tester ces hypothèses, nous avons lancé des tests utilisateur. Nous nous sommes installés dans un centre communautaire et avons invité des retraités à remplir notre questionnaire après ou avant leurs activités. Nous avons aussi testé avec d'autres utilisateurs.</p>
+            <ul>
+            <li>👤 <strong>Testeurs:</strong> 11 participants, dont 5 retraités</li>
+            <li>📋 <strong>Tâche:</strong> Compléter tous les questionnaires</li>
+            <li>🧪 <strong>Déroulement:</strong> Chaque participant a complété les 3 questionnaires.</li>
+            <li>📐 <strong>Mesures:</strong> Temps de complétion, expérience qualitative</li>
+            </ul>
+         </div>
 
-     <section id="pr1-tests">
-      <div class="tests-intro container-narrow">
-         <h2>L'heure de la vérité</h2>
-         <p>Pour tester ces hypothèses, nous avons lancé des tests utilisateur. Nous nous sommes installés dans un centre communautaire et avons invité des retraités à remplir notre questionnaire après ou avant leurs activités. Nous avons aussi testé avec d'autres utilisateurs.</p>
-         <ul class="emoji-naked-list narrow-content">
-            <li><div>👤 <strong>Testeurs:</strong></div><div>11 participants, dont 5 retraités</div></li>
-            <li><div>📋 <strong>Tâche:</strong></div><div>Compléter tous les questionnaires</div></li>
-            <li><div>🧪 <strong>Déroulement:</strong></div><div>Chaque participant a complété les 3 questionnaires.</div></li>
-            <li><div>📐 <strong>Mesures:</strong></div><div>Temps de complétion, expérience qualitative</div></li>
-         </ul>
-      </div>
-      <div class="tests">
-         <div class="tests-row">
+         <div class="tests">
+            <div class="test-card">
             <div class="test-left">
-               <img src="Images/basket.png" alt="simplification"/>
+               <img src="Images/basket.png" alt="panier d'épicerie"/>
                <h3>Panier d'épicerie</h3>
             </div>
             <div class="test-right">
-               <div>✅</div>
+               <span class="test-result">✅</span>
                <p>Cette hypothèse était <strong>vraie</strong>. Les utilisateurs ont trouvé les activités facilement via la recherche ou la liste. Le temps de complétion était significativement réduit.</p>
             </div>
-         </div>
-         <div class="tests-row">
+            </div>
+
+            <div class="test-card">
             <div class="test-left">
-               <img src="Images/basket.png" alt="simplification"/>
+               <img src="Images/basket.png" alt="saisie simplifiée"/>
                <h3>Saisie simplifiée</h3>
             </div>
             <div class="test-right">
-               <div>✅</div>
-               <p>Cette hypothèse était <strong>vraie</strong>. Les utilisateurs n’ont pas eu de difficulté à se souvenir des informations nécessaires pour effectuer une moyenne de fréquences ou de minutes hebdomadaires.</p>
+               <span class="test-result">✅</span>
+               <p>Cette hypothèse était <strong>vraie</strong>. Les utilisateurs n'ont pas eu de difficulté à se souvenir des informations nécessaires pour effectuer une moyenne de fréquences ou de minutes hebdomadaires.</p>
             </div>
-         </div>
-         <div class="test-row-container">
-            <div class="tests-row">
+            </div>
+
+            <div class="test-card test-card-dark">
+            <div class="test-content">
                <div class="test-left">
-                  <img src="Images/basket.png" alt="simplification"/>
-                  <h3 class="text-inverted">Language naturel</h3>
+                  <img src="Images/basket.png" alt="langage naturel"/>
+                  <h3 class="text-inverted">Langage naturel</h3>
                </div>
                <div class="test-right">
-                  <div>❌</div>
+                  <span class="test-result">❌</span>
                   <p class="text-inverted">Cette hypothèse était <strong>fausse</strong>. Le choix multiple a surpassé le langage naturel par sa simplicité, sa familiarité et sa facilité de lecture.</p>
                </div>
             </div>
-            <div class="comments">
-               <p class="bubble" >Je dois réfléchir plus avec [les phrases trouées].</p>
-               <p class="bubble">Il y a trop de clics. [Les choix multiples] est plus simple, plus rapide. </p>
+            <div class="test-comments">
+               <p class="bubble">Je dois réfléchir plus avec [les phrases trouées].</p>
+               <p class="bubble">Il y a trop de clics. [Les choix multiples] est plus simple, plus rapide.</p>
+            </div>
             </div>
          </div>
-
       </div>
    </section>
 
-
+<!-- FINAL Navigate -->
      <section id="pr1-naviguer">
       <h2>Naviguer en toute clarté</h2>
       <div class="image-with-annotations">
@@ -226,6 +243,7 @@
       </div>
      </section>
 
+<!-- FINAL answer -->
      <section id="pr1-repondre">
       <h2>Répondre en toute confiance</h2>
       <div class="image-with-annotations">
