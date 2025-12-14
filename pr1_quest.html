@@ -22,10 +22,15 @@
      </header>
 
 <!-- HERO -->
-     <section id="pr1-hero">
-        <h1>Refonte des questionnaires Luci</h1>
-        <p class="text-lg">Conception une expérience d’auto-évaluation plus fluide, agréable et fidèle aux données</p>
-     </section>
+      <section id="pr1-hero" class="container-narrow">
+      <h1>Refonte des questionnaires&nbsp;Luci</h1>
+      <p class="text-lg">Conception d'une expérience d'auto-évaluation plus fluide, agréable et fidèle aux données</p>
+      <ul class="text-sm">
+         <li><strong>Année:</strong> 2023-2024</li>
+         <li><strong>Mon rôle:</strong> Designer principale</li>
+         <li><strong>Type:</strong> Refonte</li>
+      </ul>
+      </section>
 
      <section id="hero-image">
       <img src="Images/pr1_hero.png" alt="hero image"/>
@@ -34,10 +39,10 @@
 <!-- CONTEXT -->
      <section id="pr1-context">
          <div class="container-narrow">
-            <h2>Pourquoi ça devait être fait</h2>
+            <h2>Pourquoi ça devait être&nbsp;fait</h2>
             <div class="paragraphs">
                <p>Luci aide les Canadiens à adopter des modes de vie plus sains. Une fonctionalité clé est un <strong>questionnaire d’auto-évaluation</strong> où les utilisateurs rapportent leurs habitudes dans trois domaines : l’activité physique, l’alimentation et la stimulation intellectuelle.</p>
-               <p>Ces questionnaires étaient cruciaux pour aider les utilisateurs à comprendre leurs prochaines étapes. Mais ils étaient longs, ambigus et difficiles à comprendre. En tant que première étape du parcours, ils ralentissaient et décourageaient les utilisateurs.</p>
+               <p>Ces questionnaires sont cruciaux pour aider les utilisateurs à comprendre leurs prochaines étapes. Mais ils étaient longs, ambigus et difficiles à comprendre. En tant que première étape du parcours, ils ralentissaient et décourageaient les utilisateurs.</p>
             </div>
          </div>
      </section>
@@ -139,40 +144,78 @@
    </section>
 
 <!-- HYPOTHESES -->
-     <section id="hypothesis-intro">
-      <p class="container-narrow">Les hypothèses suivantes nous permettraient de voir si on peut résoudre le problème.</p>
-     </section>
+<section id="hypothesis-intro">
+  <p class="container-narrow">Les hypothèses suivantes nous permettraient de voir si on peut résoudre le problème.</p>
+</section>
 
-     <section class="pr1-hypothesis-protos">
-      <div class="hypothesis-left">
-         <div class="hypothesis-text active" data-index="0">
-            <img src="Images/basket.png" alt="panier d'épicerie"/>
-            <h3>Panier d'épicerie</h3>
-            <p>Remplacer la séquence de questions oui/non par une liste d’activités à sélectionner le temps passé à répondre : l’utilisateur évaluerait toutes les options en un seul coup d'oeil.</p>
-            <p>Nous avons créé un catalogue d'activités avec une fonction de recherche et la possibilité d'ajouter des activités au "panier" avant de passer à la prochaine étape.</p>
-         </div>
-
-         <div class="hypothesis-text" data-index="1">
-            <img src="Images/basket.png" alt="simplification"/>
-            <h3>Saisie simplifiée</h3>
-            <p>Des fréquences et des minutes hebdomadaires, plutôt que des minutes et des portions par jour, seraient moins taxantes pour la mémoire. Les utilisateurs n'auraient pas besoin de se rappeller d'autant de détails.</p>
-            <p>Nous avons volontairement sacrifié un niveau de précision afin de simplifier la tâche : comme nos scores n’exigent pas un détail quotidien, une estimation hebdomadaire suffit.</p>
-         </div>
-
-         <div class="hypothesis-text" data-index="2">
-            <img src="Images/basket.png" alt="language"/>
-            <h3>Language naturel</h3>
-            <p>Des phrases trouées avec un langage naturel seraient plus intuitives.</p>
-            <p>Notre public ayant une faible aisance avec les produits numériques, nous avons testé un mode de réponse par phrase trouée. Nous l'avons comparé à une structure par choix de réponse classique.</p>
-         </div>
+<section class="pr1-hypothesis-protos">
+  <div class="hypothesis-left">
+    <div class="hypothesis-text-container">
+      <!-- Text Block 1 -->
+      <div class="hypothesis-text active" data-index="0">
+        <img src="Images/basket.png" alt="panier d'épicerie"/>
+        <h3>Panier d'épicerie</h3>
+        <p>Remplacer la séquence de questions oui/non par une liste d'activités à sélectionner le temps passé à répondre : l'utilisateur évaluerait toutes les options en un seul coup d'oeil.</p>
+        <p>Nous avons créé un catalogue d'activités avec une fonction de recherche et la possibilité d'ajouter des activités au "panier" avant de passer à la prochaine étape.</p>
       </div>
 
-      <div class="hypothesis-right">
-         <img src="Images/basket_comp.png" alt="Prototype panier">
-         <img src="Images/input_comp.png" alt="Prototype saisie">
-         <img src="Images/h3_language_proto.png" alt="Prototype language">
+      <!-- Text Block 2 -->
+      <div class="hypothesis-text" data-index="1">
+        <img src="Images/basket.png" alt="simplification"/>
+        <h3>Saisie simplifiée</h3>
+        <p>Des fréquences et des minutes hebdomadaires, plutôt que des minutes et des portions par jour, seraient moins taxantes pour la mémoire. Les utilisateurs n'auraient pas besoin de se rappeller d'autant de détails.</p>
+        <p>Nous avons volontairement sacrifié un niveau de précision afin de simplifier la tâche : comme nos scores n'exigent pas un détail quotidien, une estimation hebdomadaire suffit.</p>
       </div>
-   </section>
+
+      <!-- Text Block 3 -->
+      <div class="hypothesis-text" data-index="2">
+        <img src="Images/basket.png" alt="language"/>
+        <h3>Language naturel</h3>
+        <p>Des phrases trouées avec un langage naturel seraient plus intuitives.</p>
+        <p>Notre public ayant une faible aisance avec les produits numériques, nous avons testé un mode de réponse par phrase trouée. Nous l'avons comparé à une structure par choix de réponse classique.</p>
+      </div>
+    </div>
+
+    <!-- Mobile images - shown only on mobile -->
+    <div class="hypothesis-mobile-images mobile-only">
+      <div class="hypothesis-item">
+        <img src="Images/basket_comp.png" alt="Prototype panier">
+        <div class="hypothesis-text-mobile">
+          <img src="Images/basket.png" alt="panier d'épicerie"/>
+          <h3>Panier d'épicerie</h3>
+          <p>Remplacer la séquence de questions oui/non par une liste d'activités à sélectionner le temps passé à répondre : l'utilisateur évaluerait toutes les options en un seul coup d'oeil.</p>
+          <p>Nous avons créé un catalogue d'activités avec une fonction de recherche et la possibilité d'ajouter des activités au "panier" avant de passer à la prochaine étape.</p>
+        </div>
+      </div>
+
+      <div class="hypothesis-item">
+        <img src="Images/input_comp.png" alt="Prototype saisie">
+        <div class="hypothesis-text-mobile">
+          <img src="Images/basket.png" alt="simplification"/>
+          <h3>Saisie simplifiée</h3>
+          <p>Des fréquences et des minutes hebdomadaires, plutôt que des minutes et des portions par jour, seraient moins taxantes pour la mémoire. Les utilisateurs n'auraient pas besoin de se rappeller d'autant de détails.</p>
+          <p>Nous avons volontairement sacrifié un niveau de précision afin de simplifier la tâche : comme nos scores n'exigent pas un détail quotidien, une estimation hebdomadaire suffit.</p>
+        </div>
+      </div>
+
+      <div class="hypothesis-item">
+        <img src="Images/h3_language_proto.png" alt="Prototype language">
+        <div class="hypothesis-text-mobile">
+          <img src="Images/basket.png" alt="language"/>
+          <h3>Language naturel</h3>
+          <p>Des phrases trouées avec un langage naturel seraient plus intuitives.</p>
+          <p>Notre public ayant une faible aisance avec les produits numériques, nous avons testé un mode de réponse par phrase trouée. Nous l'avons comparé à une structure par choix de réponse classique.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hypothesis-right desktop-only">
+    <img src="Images/basket_comp.png" alt="Prototype panier">
+    <img src="Images/input_comp.png" alt="Prototype saisie">
+    <img src="Images/h3_language_proto.png" alt="Prototype language">
+  </div>
+</section>
 
 <!-- TESTS -->
    <section id="pr1-tests">
@@ -233,29 +276,32 @@
 
 <!-- FINAL Navigate -->
      <section id="pr1-naviguer">
-      <h2>Naviguer en toute clarté</h2>
-      <div class="image-with-annotations">
-         <img src="Images/pr1_naviguer.png" class="image-naviguer-1" alt="Maquettes finales 1" />
-         <div class="bubble" id="bubble-naviguer-1">Les barres de <strong>progression</strong> permettent aux utilisateurs de savoir où ils en sont et combien il leur reste à faire.</div>
-         <div class="bubble" id="bubble-naviguer-2">Des <strong>catalogues</strong> d’activités plutôt que des questions oui/non pour identifier les activités pratiquées régulièrement.</div>
-         <div class="bubble" id="bubble-naviguer-3">Un mécanisme de <strong>révision</strong> à la fin de chaque questionnaire, pour aider les utilisateurs à vérifier et à modifier leurs réponses.</div>
-
+      <div class="container-medium">
+         <h2>Naviguer en toute clarté</h2>
+         <div class="image-with-annotations">
+            <img src="Images/pr1_naviguer.png" class="image-naviguer-1 desktop-only" alt="Maquettes finales 1" />
+            <div class="bubble" id="bubble-naviguer-1">Les barres de <strong>progression</strong> permettent aux utilisateurs de savoir où ils en sont et combien il leur reste à faire.</div>
+            <div class="bubble" id="bubble-naviguer-2">Des <strong>catalogues</strong> d’activités plutôt que des questions oui/non pour identifier les activités pratiquées régulièrement.</div>
+            <div class="bubble" id="bubble-naviguer-3">Un mécanisme de <strong>révision</strong> à la fin de chaque questionnaire, pour aider les utilisateurs à vérifier et à modifier leurs réponses.</div>
+         </div>
       </div>
      </section>
 
 <!-- FINAL answer -->
      <section id="pr1-repondre">
-      <h2>Répondre en toute confiance</h2>
-      <div class="image-with-annotations">
-         <img src="Images/pr1_repondre.png" class="image-repondre-1" alt="Maquettes finales 2" />
-         <div class="bubble" id="bubble-repondre-1">Au lieu de demander des portions, nous avons opté pour des fréquences hebdomadaires sous forme de choix multiples.</div>
-         <div class="bubble" id="bubble-repondre-2">Saisie simplifiée : des fréquences hebdomadaires et des minutes, au lieu de calculs quotidiens.</div>
-         <div class="bubble" id="bubble-repondre-3">Supports visuels, tels que des emojis et des photos, pour aider à la compréhension.</div>
+      <div class="container-medium">
+         <h2>Répondre en toute confiance</h2>
+         <div class="image-with-annotations">
+            <img src="Images/pr1_repondre.png" class="image-repondre-1" alt="Maquettes finales 2" />
+            <div class="bubble" id="bubble-repondre-1">Au lieu de demander des portions, nous avons opté pour des fréquences hebdomadaires sous forme de choix multiples.</div>
+            <div class="bubble" id="bubble-repondre-2">Saisie simplifiée : des fréquences hebdomadaires et des minutes, au lieu de calculs quotidiens.</div>
+            <div class="bubble" id="bubble-repondre-3">Supports visuels, tels que des emojis et des photos, pour aider à la compréhension.</div>
+         </div>
       </div>
      </section>
 
      <section id="pr1-lesson">
-      <div class="featured">Les intuitions de design sont un point de départ, mais pas une certitude.</div>
+      <div class="featured"><h3>Les intuitions de design sont un point de départ, mais pas une certitude.</h3></div>
      </section>
 
      <section id="pr1-impact">

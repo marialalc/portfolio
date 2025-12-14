@@ -1,41 +1,27 @@
 // ============================================
-// HYPOTHESIS SECTION: Text changes as you scroll
+// HYPOTHESIS SECTION: GSAP ScrollTrigger version
 // ============================================
-const images = document.querySelectorAll('.hypothesis-right img');
-const textBlocks = document.querySelectorAll('.hypothesis-text');
+const hypothesisImages = document.querySelectorAll('.hypothesis-right img');
+const hypothesisTexts = document.querySelectorAll('.hypothesis-text');
 
-
-function throttle(func, wait) {
-  let timeout;
-  return function() {
-    if (!timeout) {
-      timeout = setTimeout(() => {
-        func();
-        timeout = null;
-      }, wait);
-    }
-  };
-}
-
-function updateActiveText() {
-  const scrollPosition = window.scrollY + window.innerHeight / 2;
-
-  images.forEach((img, index) => {
-    const rect = img.getBoundingClientRect();
-    const imgTop = rect.top + window.scrollY;
-    const imgBottom = imgTop + img.offsetHeight;
-
-    if (scrollPosition >= imgTop && scrollPosition <= imgBottom) {
-      textBlocks.forEach(text => text.classList.remove('active'));
-      textBlocks[index].classList.add('active');
+hypothesisImages.forEach((img, index) => {
+  ScrollTrigger.create({
+    trigger: img,
+    start: 'top center',
+    end: 'bottom center',
+    onEnter: () => {
+      gsap.to(hypothesisTexts, { opacity: 0, duration: 0.3 });
+      gsap.to(hypothesisTexts[index], { opacity: 1, duration: 0.3 });
+    },
+    onEnterBack: () => {
+      gsap.to(hypothesisTexts, { opacity: 0, duration: 0.3 });
+      gsap.to(hypothesisTexts[index], { opacity: 1, duration: 0.3 });
     }
   });
-}
+});
 
-window.addEventListener('scroll', throttle(updateActiveText, 100));
-
-
-textBlocks[0].classList.add('active');
+// Show first text by default
+gsap.set(hypothesisTexts[0], { opacity: 1 });
 
 // ============================================
 // BUBBLE ANIMATIONS
