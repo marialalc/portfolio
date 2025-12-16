@@ -1,3 +1,4 @@
+gsap.registerPlugin(ScrollTrigger);
 // ============================================
 // HYPOTHESIS SECTION: GSAP ScrollTrigger version
 // ============================================
@@ -66,3 +67,52 @@ testRows.forEach((row, index) => {
     }
   });
 });
+
+
+
+// ============================================
+// USERS SECTION ANIMATION
+// ============================================
+// ============================================
+// USERS SECTION ANIMATION
+// ============================================
+if (document.querySelector('#pr2_users')) {
+  // Pin the section
+  ScrollTrigger.create({
+    trigger: "#pr2_users",
+    start: "top top",
+    end: "+=300vh",
+    pin: true,
+    pinSpacing: true
+  });
+
+  // Handle content switching on scroll
+  window.addEventListener("scroll", function () {
+    let section = document.querySelector('#pr2_users');
+    if (!section) return; // Safety check
+
+    let scrollPosition = window.scrollY;
+    let sectionTop = section.offsetTop;
+    let windowHeight = window.innerHeight;
+
+    let content1 = document.querySelector('.users-content-1');
+    let content2 = document.querySelector('.users-content-2');
+
+    if (!content1 || !content2) return; // Safety check
+
+    let relativeScroll = scrollPosition - sectionTop;
+
+    // Switch content at the halfway point
+    if (relativeScroll < windowHeight * 1.5) {
+      content1.style.opacity = '1';
+      content1.style.transform = 'translateY(0)';
+      content2.style.opacity = '0';
+      content2.style.transform = 'translateY(50px)';
+    } else {
+      content1.style.opacity = '0';
+      content1.style.transform = 'translateY(-50px)';
+      content2.style.opacity = '1';
+      content2.style.transform = 'translateY(0)';
+    }
+  });
+}

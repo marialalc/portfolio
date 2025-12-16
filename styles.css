@@ -681,10 +681,77 @@ nav a:hover {
 ============================================== */
 /* Context */
 #pr2-context {
+  display: flex;
+  flex-direction: column;
   padding-top: var(--space-9);
   padding-bottom: var(--space-9);
 }
 
+/* users */
+.objective-section {
+  min-height: 100vh;
+  padding: var(--space-9) var(--space-10);
+  background-color: var(--bg-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.users-content-1,
+.users-content-2 {
+  position: absolute;
+  width: 100%;
+  max-width: 960px;
+  transition: opacity 0.6s ease, transform 0.6s ease;
+  transform: translateY(0);
+}
+
+.users-content-1 .container-medium,
+.users-content-2 .container-medium {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.users-content-1 {
+  opacity: 1; /* Start visible */
+}
+
+.users-content-2 {
+  opacity: 0; /* Start hidden */
+}
+
+/* concept */
+#pr2_concept {
+  display: flex;
+  flex-direction: column;
+  padding-top: var(--space-9);
+  padding-bottom: var(--space-9);
+}
+#pr2_concept .container-medium {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-7);
+  padding-top: var(--space-9);
+  padding-bottom: var(--space-9);
+}
+.concept-left {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+.tools p,
+.toolbox p {
+  line-height: var(--line-height-normal);
+}
+.tools img,
+.toolbox img {
+  max-width: 100px;
+}
+.img-scenario {
+  max-width: 600px;
+}
 
 
 /* ==============================================
