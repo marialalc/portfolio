@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Gloock&family=Outfit:wght@300;400;700&display=swap');/* ==============================================
-                GLOBAL STYLES
+
+/* ==============================================
+          GLOBAL STYLES
 ============================================== */
 :root {
 /* Typography */
@@ -151,6 +153,21 @@ nav a:hover {
   font-size: var(--font-size-content-lg)
 }
 
+/* ==============================================
+              LAYOUT PATTERNS
+============================================== */
+.paragraphs {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+.initiative-section {
+    padding-top: var(--space-9);
+    padding-bottom: var(--space-9);
+    background-color: var(--bg-secondary);
+  }
+
+
 
 /* ==============================================
                 WORK HOME PAGE
@@ -238,18 +255,10 @@ nav a:hover {
     padding-top: var(--space-9);
     padding-bottom: var(--space-9);
   }
-  .paragraphs {
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-4);
-  }
+
 
 /* initiative */
-  #pr1-initiative {
-    padding-top: var(--space-9);
-    padding-bottom: var(--space-9);
-    background-color: var(--bg-secondary);
-  }
+
 
 /* users */
 #pr1-users {
@@ -662,9 +671,18 @@ nav a:hover {
   background-color: var(--bg-primary);
   display: flex;
   flex-direction: column;
-  padding: var(--space-9) var(--space-10);
+  padding: var(--space-9) 0;
   gap: var(--space-3);
-    height: 900px;
+}
+
+
+/* ==============================================
+                PR2_OBJECTIVES
+============================================== */
+/* Context */
+#pr2-context {
+  padding-top: var(--space-9);
+  padding-bottom: var(--space-9);
 }
 
 
