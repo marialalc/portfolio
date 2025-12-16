@@ -689,6 +689,11 @@ nav a:hover {
 
 /* users */
 .objective-section {
+  background-color: var(--bg-primary);
+}
+
+.users-content-1,
+.users-content-2 {
   min-height: 100vh;
   padding: var(--space-9) var(--space-10);
   background-color: var(--bg-primary);
@@ -698,35 +703,33 @@ nav a:hover {
   position: relative;
 }
 
-.users-content-1,
-.users-content-2 {
-  position: absolute;
-  width: 100%;
-  max-width: 960px;
-  transition: opacity 0.6s ease, transform 0.6s ease;
-  transform: translateY(0);
-}
-
 .users-content-1 .container-medium,
 .users-content-2 .container-medium {
   display: flex;
+  flex-direction: row;
+  gap: var(--space-7);
+  align-items: flex-start;
+}
+
+.text-left {
+  display: flex;
   flex-direction: column;
-  gap: var(--space-4);
+  gap: var(--space-3);
+  flex: 1;
 }
 
-.users-content-1 {
-  opacity: 1; /* Start visible */
-}
-
-.users-content-2 {
-  opacity: 0; /* Start hidden */
+.users-img {
+  width: 200px;
+  height: auto;
+  flex-shrink: 0;
+  object-fit: contain;
 }
 
 /* concept */
 #pr2_concept {
   display: flex;
   flex-direction: column;
-  padding-top: var(--space-9);
+  padding-top: 0;
   padding-bottom: var(--space-9);
 }
 #pr2_concept .container-medium {
