@@ -19,7 +19,7 @@
 --font-size-content-sm: 1rem;
 
 --line-height-normal: 1.3;
---line-height-relaxed: 1.6;
+--line-height-relaxed: 1.5;
 
 /*color theme */
 --bg-primary: #F1F2F1;
@@ -695,7 +695,8 @@ nav a:hover {
 .users-content-1,
 .users-content-2 {
   min-height: 100vh;
-  padding: var(--space-9) var(--space-10);
+  padding-top: var(--space-9);
+  padding-bottom: var(--space-9);
   background-color: var(--bg-primary);
   display: flex;
   align-items: center;
@@ -730,19 +731,24 @@ nav a:hover {
   display: flex;
   flex-direction: column;
   padding-top: 0;
+  gap: var(--space-9);
   padding-bottom: var(--space-9);
 }
 #pr2_concept .container-medium {
   display: flex;
   flex-direction: row;
   gap: var(--space-7);
-  padding-top: var(--space-9);
-  padding-bottom: var(--space-9);
+  min-height: 200vh;
 }
 .concept-left {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-3);
+  position: sticky;
+  top: 100px;
+  height: fit-content;
+  flex: 0 0 300px;
+}
+.img-scenario {
+  flex: 1;
+  height: auto;
 }
 .tools p,
 .toolbox p {
@@ -756,10 +762,32 @@ nav a:hover {
   max-width: 600px;
 }
 
+#pr2_iteration1 {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+  padding-top: var(--space-9);
+  padding-bottom: var(--space-9);
+}
+.image-scroll-container img {
+  width: 100%;
+}
+
+#pr2_data .container-narrow {
+  display: flex;
+  flex-direction: column;
+}
+#pr2_data svg{
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+}
 
 /* ==============================================
                 MEDIA QUERIES - MOBILE
 ============================================== */
+
+/*GENERAL*/
 @media (max-width: 768px) {
   :root {
     --font-size-h1: 2.4rem;
@@ -773,15 +801,10 @@ nav a:hover {
     --space-9: 2.5rem;
     --space-10: 1.5rem;
   }
-
   header {
     padding: var(--space-3) var(--space-4);
     flex-direction: column;
     gap: var(--space-3);
-  }
-
-  nav ul {
-    gap: var(--space-3)
   }
 
   .container-narrow,
@@ -791,24 +814,21 @@ nav a:hover {
     padding-right: var(--space-4);
   }
 
-/*---sections---*/
+/*---questionnaires---*/
   #pr1-hero {
       padding: var(--space-6) var(--space-4);
     }
     #hero-image img {
       width: 100%;
     }
-
   #pr1-context {
     padding-top: var(--space-6);
     padding-bottom: var(--space-6);
   }
-
   #pr1-initiative {
     padding-top: var(--space-8);
     padding-bottom: var(--space-8);
   }
-
   #emoji-list-container {
     padding: var(--space-3) var(--space-4);
   }
@@ -836,7 +856,6 @@ nav a:hover {
       transform: rotate(3deg);
       margin-bottom: 10px;
     }
-
 
   #pr1-persona {
     padding-top: var(--space-6);
@@ -867,7 +886,6 @@ nav a:hover {
     min-height: 210px;
   }
 
-
  .pr1-hypothesis-protos {
     grid-template-columns: 1fr;
     padding: var(--space-7) var(--space-5);
@@ -875,12 +893,9 @@ nav a:hover {
   .hypothesis-left {
     position: static;
   }
-  /* Hide desktop text container on mobile */
   .hypothesis-text-container {
     display: none !important;
   }
-
-  /* Show mobile images container */
   .hypothesis-mobile-images {
     display: flex !important;
     flex-direction: column;
@@ -905,11 +920,9 @@ nav a:hover {
   .hypothesis-text-mobile p {
     margin-bottom: var(--space-3);
   }
-  /* Hide desktop images on mobile */
   .desktop-only {
     display: none !important;
   }
-
 
 #pr1-tests {
     padding-top: var(--space-6);
@@ -957,6 +970,57 @@ nav a:hover {
     top: auto;
     left: auto;
     width: 100%;
+  }
+
+
+  /*---objectives----*/
+  .users-content-1,
+  .users-content-2 {
+    padding-top: var(--space-6);
+    padding-bottom: var(--space-6);
+  }
+  .users-content-1 .container-medium,
+  .users-content-2 .container-medium {
+    flex-direction: column;
+    align-items: start;
+  }
+  .text-left ul {
+    padding-left: var(--space-5);
+  }
+
+
+  #pr2_concept img {
+    width: 100%;
+  }
+  #pr2_concept {
+    gap: var(--space-8);
+  }
+  #pr2_concept .container-medium {
+    flex-direction: column;
+    min-height: auto;
+  }
+  .concept-left {
+    position: static;
+    flex: none;
+    width: 100%;
+  }
+  .img-scenario {
+    width: 100%;
+  }
+
+  #pr2_iteration1 {
+    gap: var(--space-6);
+  }
+  .image-scroll-container {
+    overflow-x: scroll;
+    width: 100%;
+    padding-left: var(--space-2);
+    padding-right: var(--space-2);
+  }
+  .image-scroll-container img {
+    width: 250%;
+    max-width: none;
+    height: auto;
   }
 
 }

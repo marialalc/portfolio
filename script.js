@@ -82,22 +82,27 @@ document.addEventListener('DOMContentLoaded', function() {
 // ============================================
 if (document.querySelector('#pr2_users')) {
 
-  // Pin content 1
-  ScrollTrigger.create({
-    trigger: '.users-content-1',
-    start: 'top top',
-    end: 'bottom top',
-    pin: true,
-    pinSpacing: false // Key for layering!
-  });
+  // Only run on desktop
+  const mm = gsap.matchMedia();
 
-  // Pin content 2 - it slides up and covers content 1
-  ScrollTrigger.create({
-    trigger: '.users-content-2',
-    start: 'top top',
-    end: 'bottom top',
-    pin: true,
-    pinSpacing: true
+  mm.add("(min-width: 768px)", () => {
+    // Pin content 1
+    ScrollTrigger.create({
+      trigger: '.users-content-1',
+      start: 'top top',
+      end: 'bottom top',
+      pin: true,
+      pinSpacing: false
+    });
+
+    // Pin content 2
+    ScrollTrigger.create({
+      trigger: '.users-content-2',
+      start: 'top top',
+      end: 'bottom top',
+      pin: true,
+      pinSpacing: true
+    });
   });
 }
 
