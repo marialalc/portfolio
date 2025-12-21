@@ -106,4 +106,68 @@ if (document.querySelector('#pr2_users')) {
   });
 }
 
+// ============================================
+// BAR CHART ANIMATION
+// ============================================
+if (document.querySelector('#pr2_data svg')) {
+
+  // Set initial states
+  gsap.set(['#bar-1', '#bar-2', '#bar-3', '#bar-4', '#bar-5', '#bar-6'], {
+    scaleY: 0,
+    transformOrigin: 'bottom'
+  });
+
+  gsap.set(['#percentage-100', '#percentage-21', '#completion-text', '#connector-line'], {
+    opacity: 0
+  });
+
+  // Create timeline
+  const chartTimeline = gsap.timeline({
+    scrollTrigger: {
+      trigger: '#pr2_data',
+      start: 'top 70%',
+      toggleActions: 'play none none reverse'
+    }
+  });
+
+  // Animate bars one by one
+  chartTimeline
+    .to('#bar-1', { scaleY: 1, duration: 0.6, ease: 'power2.out' })
+    .to('#percentage-100', { opacity: 1, duration: 0.3 })
+    .to('#bar-2', { scaleY: 1, duration: 0.6, ease: 'power2.out' })
+    .to('#bar-3', { scaleY: 1, duration: 0.6, ease: 'power2.out' })
+    .to('#bar-4', { scaleY: 1, duration: 0.6, ease: 'power2.out' })
+    .to('#bar-5', { scaleY: 1, duration: 0.6, ease: 'power2.out' })
+    .to('#bar-6', { scaleY: 1, duration: 0.6, ease: 'power2.out' })
+    .to('#percentage-21', { opacity: 1, duration: 0.3 })
+    .to('#completion-text', { opacity: 1, duration: 0.3 })
+    .to('#connector-line', { opacity: 1, duration: 0.3 });
+}
+
+// Animate floating comments - moves on its own, pauses during scroll
+gsap.to(".comment-white", {
+  x: "-20%",
+  duration: 15,
+  ease: "none",
+  scrollTrigger: {
+    trigger: "#pr2_data_insights",
+    start: "top bottom", // starts when section enters viewport
+    end: "bottom top",   // stops when section leaves viewport
+    toggleActions: "play pause resume pause"
+  }
+});
+
+gsap.to(".comment-grey", {
+  x: "20%",
+  duration: 15,
+  ease: "none",
+  scrollTrigger: {
+    trigger: "#pr2_data_insights",
+    start: "top bottom",
+    end: "bottom top",
+    toggleActions: "play pause resume pause"
+  }
+});
+
+
 }); // Close DOMContentLoaded

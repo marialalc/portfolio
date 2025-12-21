@@ -783,6 +783,69 @@ nav a:hover {
   height: auto;
 }
 
+/*--- data ---*/
+
+
+/*---- insights -----*/
+#pr2_data_insights {
+  position: relative;
+  min-height: 50vh;
+  padding: var(--space-9) 0;
+  overflow: hidden;
+  background-color: var(--bg-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.floating-comments {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  justify-content: space-around;
+}
+.comment-white,
+.comment-grey {
+  padding: var(--space-3) var(--space-2);
+  white-space: nowrap;
+  color: #8FA09C;
+  font-size: var(--font-size-h2);
+  font-family: var(--font-heading);
+  font-weight: 300;
+}
+.comment-white {
+  background-color: white;
+}
+.comment-grey {
+  background-color: var(--bg-primary);
+  direction: rtl;
+}
+.insights-container {
+  position: relative;
+  background-color: var(--bg-secondary);
+  color: var(--text-inverted);
+  padding: var(--space-7);
+  z-index: 2;
+  max-width: 500px;
+  border-radius: 8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 /* ==============================================
                 MEDIA QUERIES - MOBILE
 ============================================== */
