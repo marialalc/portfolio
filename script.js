@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   // ============================================
-  // BUBBLE ANIMATIONS
+  // QUESTIONNAIRE BUBBLE ANIMATIONS
   // ============================================
   if (document.querySelector('#pr1-naviguer') || document.querySelector('#pr1-repondre')) {
     const sections = ['#pr1-naviguer', '#pr1-repondre'];
@@ -55,6 +55,28 @@ document.addEventListener('DOMContentLoaded', function() {
       });
     });
   }
+
+// ============================================
+// OBJECTIVES BUBBLE ANIMATIONS
+// ============================================
+if (document.querySelector('#pr2-barriers')) {
+  const bubbles = document.querySelectorAll('#pr2-barriers .bubble');
+
+  bubbles.forEach((bubble, index) => {
+    gsap.to(bubble, {
+      opacity: 1,
+      y: 0,
+      duration: 0.6,
+      delay: index * 0.3,
+      scrollTrigger: {
+        trigger: '#pr2-barriers',
+        start: 'top 50%', // Changed from 70% - triggers when section is halfway down viewport
+        toggleActions: 'play none none reverse'
+      }
+    });
+  });
+}
+
 
   // ============================================
   // TEST ROWS ANIMATIONS

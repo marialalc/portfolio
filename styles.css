@@ -156,15 +156,42 @@ nav a:hover {
 /* ==============================================
               LAYOUT PATTERNS
 ============================================== */
-.paragraphs {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-4);
-}
-.initiative-section {
-    padding-top: var(--space-9);
-    padding-bottom: var(--space-9);
-    background-color: var(--bg-secondary);
+  .paragraphs {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+  }
+  .initiative-section {
+      padding-top: var(--space-9);
+      padding-bottom: var(--space-9);
+      background-color: var(--bg-secondary);
+    }
+
+  .bubble {
+  background-color: white;
+  line-height: var(--line-height-normal);
+  font-size: var(--font-size-content-sm);
+  padding: var(--space-4);
+  box-shadow: 8px 8px 0px rgb(74, 91, 87);
+  }
+  .image-with-annotations {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+  }
+  .image-with-annotations img {
+    width: 100%;
+    height: auto;
+  }
+  .image-with-annotations .bubble {
+    position: absolute;
+    opacity: 0;
+    transform: translateX(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+  .image-with-annotations .bubble.visible {
+    opacity: 1;
+    transform: translateY(0);
   }
 
 
@@ -413,9 +440,6 @@ nav a:hover {
   border-color: transparent transparent #E8E8E8 transparent;
 }
 
-
-
-
 #hypothesis-intro {
   display: flex;
   flex-direction: column;
@@ -585,32 +609,6 @@ nav a:hover {
   flex-direction: column;
   gap: var(--space-6);
   align-items: center;
-}
-.bubble {
-  background-color: white;
-  line-height: var(--line-height-normal);
-  font-size: var(--font-size-content-sm);
-  padding: var(--space-4);
-  box-shadow: 8px 8px 0px rgb(74, 91, 87);
-}
-.image-with-annotations {
-  position: relative;
-  width: 100%;
-  max-width: 1200px;
-}
-.image-with-annotations img {
-  width: 100%;
-  height: auto;
-}
-.image-with-annotations .bubble {
-  position: absolute;
-  opacity: 0;
-  transform: translateX(20px);
-  transition: opacity 0.6s ease, transform 0.6s ease;
-}
-.image-with-annotations .bubble.visible {
-  opacity: 1;
-  transform: translateY(0);
 }
 #bubble-naviguer-1 {
   top: 20%;
@@ -838,6 +836,42 @@ nav a:hover {
   max-width: 500px;
   border-radius: 8px;
 }
+
+#pr2_transition {
+  padding-top: var(--space-9);
+  padding-bottom: var(--space-9);
+  align-items: center;
+}
+#pr2-barriers {
+  padding-top: var(--space-9);
+  padding-bottom: var(--space-9);
+}
+#pr2-barriers .container-narrow {
+  padding-bottom: var(--space-6);
+  align-items: center;
+}
+#pr2-barriers .image-with-annotations {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pr2_final_image {
+  max-width: 45%;
+}
+#bubble-objectives-1 {
+  top: 16%;
+  left: 68%;
+  width: 280px;
+  border-radius: 32px 32px 32px 2px;
+}
+#bubble-objectives-2 {
+  border-radius: 32px 32px 2px 32px;
+  width: 270px;
+  top: 50%;
+  left: 10%;
+}
+
 
 
 
