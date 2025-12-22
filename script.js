@@ -99,33 +99,21 @@ if (document.querySelector('#pr2-barriers')) {
     });
   }
 
-  // ============================================
+// ============================================
 // USERS SECTION ANIMATION
 // ============================================
 if (document.querySelector('#pr2_users')) {
-
-  // Only run on desktop
-  const mm = gsap.matchMedia();
-
-  mm.add("(min-width: 768px)", () => {
-    // Pin content 1
-    ScrollTrigger.create({
-      trigger: '.users-content-1',
-      start: 'top top',
-      end: 'bottom top',
+  gsap.timeline({
+    scrollTrigger: {
+      trigger: ".slide-container",
+      start: "top top",
+      end: "+=100%",
       pin: true,
-      pinSpacing: false
-    });
-
-    // Pin content 2
-    ScrollTrigger.create({
-      trigger: '.users-content-2',
-      start: 'top top',
-      end: 'bottom top',
-      pin: true,
-      pinSpacing: true
-    });
-  });
+      scrub: 1
+    }
+  })
+  .to(".users-content-1", { x: "-100%" }, 0)
+  .to(".users-content-2", { x: "0%" }, 0);
 }
 
 // ============================================
@@ -209,6 +197,14 @@ if (document.querySelector('#pr2_data_insights')) {
     });
   });
 }
+
+
+
+
+
+
+
+
 
   // Refresh ScrollTrigger after page loads
   window.addEventListener('load', () => {
