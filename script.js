@@ -123,12 +123,24 @@ if (document.querySelector('#pr2_data svg')) {
 
   // Create timeline
   const chartTimeline = gsap.timeline({
-    scrollTrigger: {
-      trigger: '#pr2_data',
-      start: 'top 70%',
-      toggleActions: 'play none none reverse'
-    }
+    paused: true
   });
+
+  // Manually trigger when section is visible using Intersection Observer
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        chartTimeline.play();
+        observer.unobserve(entry.target);  // Only trigger once
+      }
+    });
+  });
+
+  const chartSection = document.querySelector('#pr2_data');
+  if (chartSection) {
+    observer.observe(chartSection);
+  }
+
 
   // Animate bars one by one
   chartTimeline
@@ -144,30 +156,41 @@ if (document.querySelector('#pr2_data svg')) {
     .to('#connector-line', { opacity: 1, duration: 0.3 });
 }
 
-// Animate floating comments - moves on its own, pauses during scroll
-gsap.to(".comment-white", {
-  x: "-20%",
-  duration: 15,
-  ease: "none",
-  scrollTrigger: {
-    trigger: "#pr2_data_insights",
-    start: "top bottom", // starts when section enters viewport
-    end: "bottom top",   // stops when section leaves viewport
-    toggleActions: "play pause resume pause"
-  }
+
+
+// Animate comment bubbles appearing randomly
+if (document.querySelector('#pr2_data_insights')) {
+  const commentBubbles = document.querySelectorAll('.comment-bubble');
+
+  const mm = gsap.matchMedia();
+
+  mm.add("(min-width: 769px)", () => {
+    // Set initial state ONLY on desktop
+    gsap.set('.comment-bubble', {
+      scale: 0,
+      opacity: 1
+    });
+
+    gsap.to(commentBubbles, {
+      scale: 1,
+      duration: 0.5,
+      ease: "back.out(1.7)",
+      stagger: {
+        each: 0.2,
+        from: "random"
+      },
+      scrollTrigger: {
+        trigger: '#pr2_data_insights',
+        start: 'top 70%',
+        toggleActions: 'play none none reverse'
+      }
+    });
+  });
+}
+
+  // Refresh ScrollTrigger after page loads
+  window.addEventListener('load', () => {
+    ScrollTrigger.refresh();
+  });
+
 });
-
-gsap.to(".comment-grey", {
-  x: "20%",
-  duration: 15,
-  ease: "none",
-  scrollTrigger: {
-    trigger: "#pr2_data_insights",
-    start: "top bottom",
-    end: "bottom top",
-    toggleActions: "play pause resume pause"
-  }
-});
-
-
-}); // Close DOMContentLoaded
