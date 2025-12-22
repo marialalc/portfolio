@@ -1084,10 +1084,17 @@ nav a:hover {
 
 
   /*---objectives----*/
+  .slide-container {
+    height: auto;
+    overflow: visible;
+  }
   .users-content-1,
   .users-content-2 {
-    padding-top: var(--space-6);
-    padding-bottom: var(--space-6);
+    position: relative;
+    height: auto;
+  }
+  .users-content-2 {
+    transform: none;
   }
   .users-content-1 .container-medium,
   .users-content-2 .container-medium {
