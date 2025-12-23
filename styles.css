@@ -848,26 +848,26 @@ nav a:hover {
   align-items: center;
 }
 
-/*---- barriers -----*/
-#pr2-barriers {
-  padding-top: var(--space-9);
-  padding-bottom: var(--space-9);
-}
-#pr2-barriers .container-narrow {
-  padding-bottom: var(--space-6);
-  align-items: center;
-}
-#pr2-barriers .image-with-annotations {
-  margin: 0 auto;
+/*---- final -----*/
+#pr2-final-1,
+#pr2-final-2 {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  gap: var(--space-6);
 }
-.pr2_final_image {
-  max-width: 45%;
+#pr2-final-1 {
+  padding-bottom: var(--space-9);
+}
+.pr2-annotations-row {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-7);
+}
+.pr2-annotations-row img {
+  width: 55%;
 }
 #bubble-objectives-1 {
-  top: 16%;
+  top: 0%;
   left: 68%;
   width: 280px;
   border-radius: 32px 32px 32px 2px;
@@ -878,6 +878,7 @@ nav a:hover {
   top: 50%;
   left: 10%;
 }
+
 
 
 

@@ -203,6 +203,7 @@ if (document.querySelector('#pr2_data_insights')) {
 }
 
 
+
   // Refresh ScrollTrigger after page loads
   window.addEventListener('load', () => {
     ScrollTrigger.refresh();
