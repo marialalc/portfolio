@@ -852,29 +852,63 @@ nav a:hover {
   display: flex;
   flex-direction: column;
   gap: var(--space-6);
-}
-#pr2-final-1 {
   padding-bottom: var(--space-9);
 }
-.pr2-annotations-row {
+.pr2-final1-annotations {
+  position: relative;
   display: flex;
-  flex-direction: row;
-  gap: var(--space-7);
+  justify-content: center;
 }
-.pr2-annotations-row img {
-  width: 55%;
+.pr2-final1-annotations img {
+  width: 60%;
 }
-#bubble-objectives-1 {
-  top: 0%;
-  left: 68%;
-  width: 280px;
-  border-radius: 32px 32px 32px 2px;
+.annotation {
+  position: absolute;
+  max-width: 220px;
+  line-height: var(--line-height-normal);
+  font-size: var(--font-size-content-sm);
 }
-#bubble-objectives-2 {
-  border-radius: 32px 32px 2px 32px;
-  width: 270px;
-  top: 50%;
-  left: 10%;
+.annotation-left-1 {
+  top: 39%;
+  left: -5%;
+}
+.annotation-left-1 .arrow {
+  position: absolute;
+  top: -110%;
+  left: 40%;
+}
+
+.annotation-left-2 {
+  top: 60%;
+  left: -5%;
+}
+.annotation-left-2 .arrow {
+  position: absolute;
+  top: 115%;
+  left: 37%;
+}
+
+.annotation-right-1 {
+  top: 42%;
+  left: 82%;
+}
+.annotation-right-1 .arrow {
+  position: absolute;
+  top: -125%;
+  left: -8%;
+}
+
+.annotation-right-2 {
+  top: 62%;
+  left: 82%;
+}
+
+
+
+
+
+#pr2_showcase video {
+  width: 20%;
 }
 
 
