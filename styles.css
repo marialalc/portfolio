@@ -498,7 +498,6 @@ nav a:hover {
   min-height: 100vh;
   object-fit: contain;
 }
-/* Hide mobile images on desktop - use !important to prevent flash */
 .mobile-only {
   display: none !important;
 }
@@ -847,63 +846,102 @@ nav a:hover {
 }
 
 /*---- final -----*/
-#pr2-final-1,
-#pr2-final-2 {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-6);
-  padding-bottom: var(--space-9);
-}
-.pr2-final1-annotations {
+.pr2-final-desktop {
   position: relative;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  gap: var(--space-8);
+  align-items: center;
 }
-.pr2-final1-annotations img {
-  width: 60%;
+.pr2-final-mobile {
+  display: none;
+}
+.pr2-final-desktop img {
+  width: 35%;
 }
 .annotation {
-  position: absolute;
-  max-width: 220px;
-  line-height: var(--line-height-normal);
   font-size: var(--font-size-content-sm);
+  line-height: var(--line-height-normal);
+  max-width: 200px;
+  background-color: white;
+  padding: var(--space-2);
+  border-radius: 8px;
 }
-.annotation-left-1 {
-  top: 39%;
-  left: -5%;
+.arrow {
+  max-width: 40px;
 }
-.annotation-left-1 .arrow {
+
+.annotation1 {
   position: absolute;
-  top: -110%;
-  left: 40%;
+  top: 24%;
+  left: 17%;
 }
-
-.annotation-left-2 {
-  top: 60%;
-  left: -5%;
-}
-.annotation-left-2 .arrow {
+.arrow1 {
   position: absolute;
-  top: 115%;
-  left: 37%;
+  top: 21.6%;
+  left: 29%;
 }
-
-.annotation-right-1 {
-  top: 42%;
-  left: 82%;
-}
-.annotation-right-1 .arrow {
+.annotation2 {
   position: absolute;
-  top: -125%;
-  left: -8%;
+  top: 37%;
+  left: 17%;
+}
+.arrow2 {
+  position: absolute;
+  top: 44%;
+  left: 29%;
+}
+.annotation3 {
+  position: absolute;
+  top: 24%;
+  right: 17%;
+}
+.arrow3 {
+  position: absolute;
+  top: 21%;
+  right: 29%;
+}
+.annotation4 {
+  position: absolute;
+  top: 34%;
+  right: 17%;
+}
+.arrow4 {
+  position: absolute;
+  top: 41%;
+  right: 29%;
 }
 
-.annotation-right-2 {
-  top: 62%;
-  left: 82%;
+.annotation5 {
+  position: absolute;
+  top: 74%;
+  left: 17%;
 }
-
-
+.arrow5 {
+  position: absolute;
+  top: 71%;
+  left: 29%;
+}
+.annotation6 {
+  position: absolute;
+  top: 90%;
+  left: 17%;
+}
+.arrow6 {
+  position: absolute;
+  top: 94%;
+  left: 29%;
+}
+.annotation7 {
+  position: absolute;
+  top: 80%;
+  right: 17%;
+}
+.arrow7 {
+  position: absolute;
+  top: 77%;
+  right: 29%;
+}
 
 
 
@@ -957,6 +995,9 @@ nav a:hover {
     padding-right: var(--space-4);
   }
 
+  body {
+    overflow-x: hidden;
+  }
 /*---questionnaires---*/
   #pr1-hero {
       padding: var(--space-6) var(--space-4);
@@ -1185,8 +1226,8 @@ nav a:hover {
   height: auto;
   max-height: 150px;
   order: 1;
-  width: 150%;
-  margin-left: -25%;
+  width: 100%;
+  margin-left: 0;
 }
 
 .comment-bubble {
@@ -1210,4 +1251,29 @@ nav a:hover {
   .insights-container ul {
     padding-left: var(--space-4);
   }
+
+
+.pr2-final-desktop {
+  display: none;
+}
+.pr2-final-mobile {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+  padding-top: var(--space-9);
+  padding-bottom: var(--space-9);
+}
+.pr2-final1 img {
+  width: 100%;
+}
+.pr2-final1 ul {
+  font-size: var(--font-size-content-sm);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  padding-left: var(--space-6);
+
+}
+
+
 }
