@@ -748,8 +748,10 @@ nav a:hover {
   flex: 0 0 300px;
 }
 .img-scenario {
-  flex: 1;
+  max-width: 700px;
+  width: 100%;
   height: auto;
+  object-fit: contain;
 }
 .tools p,
 .toolbox p {
@@ -759,9 +761,7 @@ nav a:hover {
 .toolbox img {
   max-width: 100px;
 }
-.img-scenario {
-  max-width: 600px;
-}
+
 
 #pr2_iteration1 {
   display: flex;
