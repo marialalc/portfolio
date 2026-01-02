@@ -721,7 +721,7 @@ nav a:hover {
   flex: 1;
 }
 .users-img {
-  width: 200px;
+  width: 280px;
   height: auto;
   flex-shrink: 0;
   object-fit: contain;
