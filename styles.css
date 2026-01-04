@@ -717,8 +717,11 @@ nav a:hover {
 .text-left {
   display: flex;
   flex-direction: column;
-  gap: var(--space-3);
+  gap: var(--space-4);
   flex: 1;
+}
+.text-left ul {
+  padding-left: var(--space-5);
 }
 .users-img {
   width: 280px;
@@ -747,15 +750,53 @@ nav a:hover {
   height: fit-content;
   flex: 0 0 300px;
 }
+.img-with-legend {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+.img-with-legend img {
+  width: 600px;
+  height: auto;
+}
+.img-with-legend p {
+  font-size: var(--font-size-content-sm);
+  color: var(--text-secondary);
+}
+
+
 .img-scenario {
   max-width: 700px;
   width: 100%;
   height: auto;
   object-fit: contain;
 }
+.concept-left {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-9);
+}
+.tools,
+.toolbox {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: var(--space-4);
+  gap: var(--space-5);
+  align-items: center;
+  border-radius: 16px;
+  box-shadow: 4px 4px 10px rgb(221, 226, 224);
+}
+.tools div,
+.toolbox div {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
 .tools p,
 .toolbox p {
   line-height: var(--line-height-normal);
+  text-align: center;
 }
 .tools img,
 .toolbox img {
@@ -766,15 +807,16 @@ nav a:hover {
 #pr2_iteration1 {
   display: flex;
   flex-direction: column;
-  gap: var(--space-8);
+  gap: var(--space-6);
   padding-top: var(--space-9);
   padding-bottom: var(--space-9);
 }
 .image-scroll-container img {
-  width: 100%;
+  width: 70%;
 }
 
 #pr2_data .container-narrow {
+  padding-top: var(--space-5);
   display: flex;
   flex-direction: column;
 }
@@ -1171,9 +1213,13 @@ nav a:hover {
   .users-content-2 .container-medium {
     flex-direction: column;
     align-items: start;
+    gap: var(--space-4);
   }
   .text-left ul {
     padding-left: var(--space-5);
+  }
+  .users-img {
+    width: 170px;
   }
 
 
@@ -1181,6 +1227,7 @@ nav a:hover {
     width: 100%;
   }
   #pr2_concept {
+    padding-top: var(--space-9);
     gap: var(--space-8);
   }
   #pr2_concept .container-medium {
@@ -1191,6 +1238,7 @@ nav a:hover {
     position: static;
     flex: none;
     width: 100%;
+    gap: var(--space-5);
   }
   .img-scenario {
     width: 100%;
