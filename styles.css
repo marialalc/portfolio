@@ -812,7 +812,7 @@ nav a:hover {
   padding-bottom: var(--space-9);
 }
 .image-scroll-container img {
-  width: 70%;
+  width: 100%;
 }
 
 #pr2_data .container-narrow {
@@ -820,7 +820,8 @@ nav a:hover {
   display: flex;
   flex-direction: column;
 }
-#pr2_data svg{
+#pr2_data svg {
+  padding-top: var(--space-5);
   width: 100%;
   max-width: 500px;
   height: auto;
@@ -828,6 +829,7 @@ nav a:hover {
 
 /*--- data ---*/
 #pr2_data {
+  padding-top: var(--space-9);
   padding-bottom: var(--space-9);
 }
 
@@ -878,17 +880,33 @@ nav a:hover {
   z-index: 2;
   max-width: 500px;
   border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+.insights-container ul {
+  padding-left: var(--space-5);
 }
 
 /*---- transition -----*/
+.post-its-list {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-5);
+
+}
 #pr2_transition {
   padding-top: var(--space-9);
   padding-bottom: var(--space-9);
   align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
 }
 
 /*---- final -----*/
 .pr2-final-desktop {
+  padding-top: var(--space-9);
   position: relative;
   display: flex;
   flex-direction: column;
@@ -985,10 +1003,11 @@ nav a:hover {
   right: 29%;
 }
 
-
-
-#pr2_showcase video {
-  width: 20%;
+#pr2_showcase {
+  padding-top: var(--space-9);
+}
+#pr2_showcase img {
+  width: 100%;
 }
 
 
@@ -1298,6 +1317,12 @@ nav a:hover {
   }
   .insights-container ul {
     padding-left: var(--space-4);
+  }
+
+
+
+  .post-its-list {
+    flex-direction: column;
   }
 
 
