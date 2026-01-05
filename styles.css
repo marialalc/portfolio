@@ -197,6 +197,11 @@ nav a:hover {
   opacity: 0;
   transform: translateY(60px);
 }
+.fade-in-right {
+  opacity: 0;
+  transform: translateX(-10px);
+
+}
 
 
 
@@ -279,14 +284,6 @@ nav a:hover {
     height: auto;
     object-fit: contain;
     opacity: 0;
-    transform: translateY(40px);
-    animation: slideUp 1s ease-out forwards;
-  }
-  @keyframes slideUp {
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
   }
   .pr1-hero-columns {
     display: flex;
@@ -710,6 +707,38 @@ nav a:hover {
 /* ==============================================
                 PR2_OBJECTIVES
 ============================================== */
+/* pr2 hero */
+#pr2-hero {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+  padding-bottom: var(--space-7);
+  padding-top: var(--space-7);
+}
+#pr2-hero img {
+  width: 140%;
+  height: auto;
+  object-fit: contain;
+  opacity: 0;
+}
+.pr2-hero-columns {
+    display: flex;
+    flex-direction: row;
+    gap: var(--space-9);
+    padding-bottom: var(--space-9);
+}
+  .pr2-hero-columns > ul {
+    list-style: none;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+    width: max-content;
+  }
+  .pr2-hero-columns > ul > li {
+  white-space: nowrap;
+  }
+
 /* Context */
 #pr2-context {
   display: flex;

@@ -25,6 +25,28 @@ fadeElements.forEach(element => {
   });
 });
 
+// ============================================
+// FADE IN FROM LEFT ANIMATION
+// ============================================
+const fadeRightElements = gsap.utils.toArray('.fade-in-right');
+
+gsap.set(fadeRightElements, { opacity: 0, x: -60 });
+
+fadeRightElements.forEach(element => {
+  gsap.to(element, {
+    opacity: 1,
+    x: 0,
+    duration: 2,
+    ease: 'power2.out',
+    scrollTrigger: {
+      trigger: element,
+      start: 'top 80%',
+      toggleActions: 'play none none reverse',
+      refreshPriority: -1
+    }
+  });
+});
+
   // ============================================
   // EMOJI LIST GSAP ANIMATION
   // ============================================
