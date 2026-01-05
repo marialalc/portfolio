@@ -380,7 +380,7 @@ nav a:hover {
   gap: var(--space-7);
 }
 .persona-img {
-  width: 160px;
+  width: 220px;
   flex-shrink: 0;
   object-fit: contain;
 }

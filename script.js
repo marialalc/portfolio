@@ -2,6 +2,23 @@ gsap.registerPlugin(ScrollTrigger);
 
 document.addEventListener('DOMContentLoaded', function() {
 
+// ============================================
+// FADE IN FROM BOTTOM ANIMATION
+// ============================================
+gsap.utils.toArray('.fade-in-up').forEach(element => {
+  gsap.from(element, {
+    opacity: 0,
+    y: 60,
+    duration: 0.8,
+    ease: 'power2.out',
+    scrollTrigger: {
+      trigger: element,
+      start: 'top 80%',
+      toggleActions: 'play none none reverse'
+    }
+  });
+});
+
   // ============================================
   // EMOJI LIST GSAP ANIMATION
   // ============================================
