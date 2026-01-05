@@ -1120,13 +1120,33 @@ nav a:hover {
   body {
     overflow-x: hidden;
   }
+
+
+
 /*---questionnaires---*/
   #pr1-hero {
-      padding: var(--space-6) var(--space-4);
-    }
-    #hero-image img {
-      width: 100%;
-    }
+    overflow-x: hidden;
+    max-width: 100vw;
+  }
+  #pr1-hero img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    object-fit: contain;
+    opacity: 0;
+    transform: translateY(40px);
+    animation: slideUp 1s ease-out forwards;
+  }
+  .pr1-hero-columns {
+    flex-direction: column;
+  }
+  .pr1-hero-columns > ul {
+    gap: var(--space-1);
+  }
+
+
+
+
   #pr1-context {
     padding-top: var(--space-6);
     padding-bottom: var(--space-6);
