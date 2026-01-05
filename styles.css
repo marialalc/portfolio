@@ -716,7 +716,7 @@ nav a:hover {
   padding-top: var(--space-7);
 }
 #pr2-hero img {
-  width: 140%;
+  width: 100%;
   height: auto;
   object-fit: contain;
   opacity: 0;
