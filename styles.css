@@ -193,6 +193,10 @@ nav a:hover {
     opacity: 1;
     transform: translateY(0);
   }
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(60px);
+}
 
 
 
@@ -697,7 +701,8 @@ nav a:hover {
   background-color: var(--bg-primary);
   display: flex;
   flex-direction: column;
-  padding: var(--space-9) 0;
+  padding-top: var(--space-9);
+  padding-bottom: var(--space-9);
   gap: var(--space-3);
 }
 

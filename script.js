@@ -2,19 +2,25 @@ gsap.registerPlugin(ScrollTrigger);
 
 document.addEventListener('DOMContentLoaded', function() {
 
+
 // ============================================
 // FADE IN FROM BOTTOM ANIMATION
 // ============================================
-gsap.utils.toArray('.fade-in-up').forEach(element => {
-  gsap.from(element, {
-    opacity: 0,
-    y: 60,
+const fadeElements = gsap.utils.toArray('.fade-in-up');
+
+gsap.set(fadeElements, { opacity: 0, y: 60 });
+
+fadeElements.forEach(element => {
+  gsap.to(element, {
+    opacity: 1,
+    y: 0,
     duration: 0.8,
     ease: 'power2.out',
     scrollTrigger: {
       trigger: element,
       start: 'top 80%',
-      toggleActions: 'play none none reverse'
+      toggleActions: 'play none none reverse',
+      refreshPriority: -1
     }
   });
 });
@@ -152,7 +158,8 @@ gsap.utils.toArray('.fade-in-up').forEach(element => {
           start: "top top",
           end: "+=100%",
           pin: true,
-          scrub: 1
+          scrub: 1,
+          refreshPriority: 1
         }
       })
       .to(".users-content-1", { x: "-100%" }, 0)
