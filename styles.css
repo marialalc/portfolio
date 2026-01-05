@@ -314,9 +314,6 @@ nav a:hover {
   }
 
 
-/* initiative */
-
-
 /* users */
 #pr1-users {
   background-color: var(--bg-primary);
@@ -343,6 +340,8 @@ nav a:hover {
   gap: var(--space-3);
   line-height: var(--line-height-normal);
   border-radius: 6px;
+  opacity: 0;
+  scale: 0.8;
 }
 .emoji-list:nth-child(1) {
   transform: translateX(0px) rotate(-2deg);
@@ -360,6 +359,8 @@ nav a:hover {
   transform: translate(15px) rotate(2deg);
   margin-bottom: 10px;
 }
+
+
 
 /* persona */
 #pr1-persona {
@@ -1148,15 +1149,20 @@ nav a:hover {
 
 
 
-
   #pr1-context {
     padding-top: var(--space-6);
     padding-bottom: var(--space-6);
   }
+
+
+
   #pr1-initiative {
     padding-top: var(--space-8);
     padding-bottom: var(--space-8);
   }
+
+
+
   #emoji-list-container {
     padding: var(--space-3) var(--space-4);
   }
