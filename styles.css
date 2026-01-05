@@ -833,6 +833,10 @@ nav a:hover {
   padding-bottom: var(--space-9);
 }
 
+#pr2-tests-intro {
+  padding-bottom: var(--space-9);
+}
+
 /*---- insights -----*/
 #pr2_data_insights {
   position: relative;
@@ -1005,9 +1009,36 @@ nav a:hover {
 
 #pr2_showcase {
   padding-top: var(--space-9);
+  overflow: hidden;
+}
+#pr2_showcase .container-narrow {
+  padding-top: var(--space-9);
+  align-items: center;
+  padding-bottom: var(--space-6);
+}
+.carousel-wrapper {
+  overflow: hidden;
+  width: 100%;
 }
 #pr2_showcase img {
-  width: 100%;
+  width: auto;
+  height: 400px;
+  animation: scroll-carousel 60s linear infinite;
+}
+#pr2_showcase .container-narrow ul {
+  padding-left: var(--space-5);
+}
+@keyframes scroll-carousel {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+#pr2-lesson {
+  padding-top: var(--space-9);
 }
 
 
@@ -1346,6 +1377,11 @@ nav a:hover {
   gap: var(--space-3);
   padding-left: var(--space-6);
 
+}
+
+
+#pr2_showcase img {
+  height: 300px;
 }
 
 
