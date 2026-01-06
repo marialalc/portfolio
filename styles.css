@@ -156,7 +156,7 @@ nav a:hover {
   font-size: var(--font-size-content-lg)
 }
 .site-footer {
-  background-image: url('Images/background_grain1.svg');
+  background-image: url('Images/background-grain.png');
   background-size: cover;
   background-position: center;
   display: flex;
@@ -305,7 +305,7 @@ button.hamburger {
                 HOME PAGE
 ============================================== */
 #hero {
-  background-image: url('Images/background_grain1.svg');
+  background-image: url('Images/background-grain.png');
   background-position: center;
   background-size: cover;
   padding-top: var(--space-10);
