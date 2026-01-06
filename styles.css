@@ -366,6 +366,9 @@ button.hamburger {
   padding-top: var(--space-9);
   padding-bottom: var(--space-9);
 }
+#pr-project-list {
+  background-color: #F2F1F1;
+}
 #project-list > a {
   flex: 1;
   min-width: 0;
