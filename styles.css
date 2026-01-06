@@ -308,6 +308,9 @@ button.hamburger {
   padding-top: var(--space-10);
   padding-bottom: var(--space-10);
 }
+#hero .container-medium {
+  text-align: center;
+}
 
 /* --- PROJECT LIST --- */
 #project-list {
@@ -1018,8 +1021,10 @@ button.hamburger {
 .bubbles-grid {
   position: absolute;
   top: 0;
-  left: 0;
+  left: 50%;
+  transform: translateX(-50%);
   width: 100%;
+  max-width: 1400px;
   height: 100%;
   display: flex;
   flex-wrap: wrap;
