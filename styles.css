@@ -117,7 +117,10 @@ h4 {font-size: var(--font-size-h4); line-height: var(--line-height-normal);}
   margin: 0 auto;
 }
 .container-wide {
-  max-width: 100%;
+  max-width: 1220px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 
 
@@ -299,33 +302,79 @@ button.hamburger {
 
 
 /* ==============================================
-                WORK HOME PAGE
+                HOME PAGE
 ============================================== */
 #hero {
   background-image: url('Images/background_grain1.svg');
   background-position: center;
   background-size: cover;
   padding-top: var(--space-10);
-  padding-bottom: var(--space-10);
+  padding-bottom: var(--space-7);
+}
+.home-icons {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  height: 220px;
+  margin: 0 auto;
 }
 #hero .container-medium {
   text-align: center;
+}
+#home-cursor {
+  position: absolute;
+  top: 0%;
+  left: 65%;
+}
+#icon-ui {
+  position: absolute;
+  bottom: 150%;
+  right: 10%;
+}
+#icon-component {
+  position: absolute;
+  bottom: 120%;
+  right: 10%;
+}
+#icon-screen {
+  position: absolute;
+  bottom: 150%;
+  right: 17.5%;
+}
+#icon-graph {
+  position: absolute;
+  top: 13%;
+  right: 80%;
+}
+#icon-ux {
+  position: absolute;
+  top: 50%;
+  right: 80%;
+}
+#icon-user {
+  position: absolute;
+  top: 30%;
+  right: 71%;
 }
 
 /* --- PROJECT LIST --- */
 #project-list {
   display: flex;
+  width: 100%;
   flex-direction: row;
   gap: var(--space-5);
   padding-top: var(--space-9);
   padding-bottom: var(--space-9);
 }
+#project-list > a {
+  flex: 1;
+  min-width: 0;
+}
 .project-card {
   background-color: white;
-  height: 450px;
-  max-width: 350px;
-  overflow: hidden;
   display: flex;
+  height: 416px;
+  flex: 1;
   flex-direction: column;
   gap: var(--space-1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -1300,7 +1349,19 @@ button.hamburger {
 /*-- HOME --*/
 #project-list {
   flex-direction: column;
-  gap: var(--space-5);
+  gap: var(--space-6);
+}
+.home-icons {
+  height: 200px
+}
+#hero .container-medium {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.project-card {
+  height: 320px;
 }
 .project-card img {
   height: 120px;
