@@ -589,10 +589,12 @@ button.hamburger {
 /*protos*/
 .pr1-hypothesis-protos {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1.5fr;
   gap: var(--space-7);
   padding: var(--space-9) var(--space-10);
   background: var(--bg-primary);
+  max-width: 1500px;
+  margin: 0 auto;
 }
 .hypothesis-left {
   position: sticky;
@@ -630,7 +632,8 @@ button.hamburger {
   gap: var(--space-9);
 }
 .hypothesis-right img {
-  width: 130%;
+  width: 100%;
+  max-width: 1000px;
   height: auto;
   min-height: 100vh;
   object-fit: contain;
