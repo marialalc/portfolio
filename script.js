@@ -2,6 +2,20 @@ gsap.registerPlugin(ScrollTrigger);
 
 document.addEventListener('DOMContentLoaded', function() {
 
+// Mobile menu toggle
+const hamburger = document.getElementById('hamburger');
+const mobileMenu = document.getElementById('mobile-menu');
+const closeMenu = document.getElementById('close-menu');
+
+if (hamburger && mobileMenu && closeMenu) {
+  hamburger.addEventListener('click', () => {
+    mobileMenu.classList.add('active');
+  });
+
+  closeMenu.addEventListener('click', () => {
+    mobileMenu.classList.remove('active');
+  });
+}
 
 // Language toggle functionality
 const languageToggle = document.getElementById('language-toggle');

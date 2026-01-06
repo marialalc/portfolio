@@ -9,17 +9,39 @@
 </head>
 
 <body>
-<!-- NAVIGATION -->
-    <header>
-    <p class="logo">Maria Alcaraz</p>
-    <nav>
-        <ul>
-            <li><a href="Home.html">Work</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-    </header>
+    <!-- NAVIGATION -->
+     <header>
+        <p class="logo">Maria Alcaraz</p>
+        <!-- desktop nav-->
+        <nav class="desktop-nav">
+            <ul>
+                <li><a href="#" id="language-toggle" class="button">EN</a></li>
+                <li><a href="home.html" class="button">Work</a></li>
+                <li><a href="about.html" class="button">About</a></li>
+            </ul>
+        </nav>
+        <!--Hamburger button mobile-->
+        <button class="icon-button hamburger" id="hamburger">
+            <img src="Images/nav_hamburger.png" alt="Menu" class="icon">
+        </button>
+     </header>
+
+     <!--Mobile menu overlay-->
+     <div class="mobile-menu" id="mobile-menu">
+        <div class="mobile-menu-header">
+            <p class="logo">Maria Alcaraz</p>
+            <button class="icon-button" id="close-menu">
+                <img src="Images/nav_x.png" alt="Close" class="icon">
+            </button>
+        </div>
+        <nav class="mobile-nav">
+            <ul>
+            <li><a href="home.html" class="button">Work</a></li>
+            <li><a href="about.html" class="button">About</a></li>
+            <li><a href="#" id="language-toggle-mobile" class="button">EN</a></li>
+            </ul>
+        </nav>
+     </div>
 
 <!-- HERO -->
     <section id="pr2-hero">
