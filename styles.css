@@ -153,7 +153,9 @@ nav a:hover {
   font-size: var(--font-size-content-lg)
 }
 .site-footer {
-  background-color: #D4DBD4;
+  background-image: url('Images/background_grain1.svg');
+  background-size: cover;
+  background-position: center;
   display: flex;
   flex-direction: row;
   gap: var(--space-5);
@@ -167,7 +169,7 @@ nav a:hover {
   display: flex;
   flex-direction: row;
   gap: var(--space-4);
-  background-color: #BBC9BB;
+  background-color: rgba(172, 204, 194, 0.5);
   padding: var(--space-4);
   border-radius: 16px;
 }
@@ -300,26 +302,31 @@ button.hamburger {
                 WORK HOME PAGE
 ============================================== */
 #hero {
-  padding-top: var(--space-9);
-  padding-bottom: var(--space-9);
+  background-image: url('Images/background_grain1.svg');
+  background-position: center;
+  background-size: cover;
+  padding-top: var(--space-10);
+  padding-bottom: var(--space-10);
 }
 
 /* --- PROJECT LIST --- */
 #project-list {
   display: flex;
   flex-direction: row;
-  gap: var(--space-3);
+  gap: var(--space-5);
   padding-top: var(--space-9);
   padding-bottom: var(--space-9);
 }
 .project-card {
   background-color: white;
+  height: 450px;
   max-width: 350px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
   gap: var(--space-1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  line-height: var(--line-height-normal);
 }
 .project-card:hover {
   transform: translateY(-8px);
@@ -355,6 +362,8 @@ button.hamburger {
 .tag {
   background-color: #F2F1F1;
   padding: var(--space-1) var(--space-3);
+  font-size: var(--font-size-content-sm);
+  border-radius: 4px;
 }
 
 
@@ -1265,6 +1274,19 @@ button.hamburger {
     align-items: center;
     gap: var(--space-4);
   }
+  .footer-contact,
+  .footer-links {
+    flex-direction: column;
+  }
+
+/*-- HOME --*/
+#project-list {
+  flex-direction: column;
+  gap: var(--space-5);
+}
+.project-card img {
+  height: 120px;
+}
 
 /*---questionnaires---*/
   #pr1-hero {
