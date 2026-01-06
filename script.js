@@ -3,6 +3,24 @@ gsap.registerPlugin(ScrollTrigger);
 document.addEventListener('DOMContentLoaded', function() {
 
 
+// Language toggle functionality
+const languageToggle = document.getElementById('language-toggle');
+
+  if (languageToggle) {  // Only run if button exists
+    const currentPage = window.location.pathname.split('/').pop();
+    const isEnglish = currentPage.includes('-en');
+
+    if (isEnglish) {
+      languageToggle.textContent = 'FR';
+      const frenchPage = currentPage.replace('-en', '');
+      languageToggle.href = frenchPage;
+    } else {
+      languageToggle.textContent = 'EN';
+      const englishPage = currentPage.replace('.html', '-en.html');
+      languageToggle.href = englishPage;
+    }
+  }
+
 // ============================================
 // FADE IN FROM BOTTOM ANIMATION
 // ============================================

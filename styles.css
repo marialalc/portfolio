@@ -134,7 +134,7 @@ header {
 /* link container */
 nav ul {
   display: flex;
-  gap: var(--space-5);
+  gap: var(--space-2);
   list-style: none;
   margin: 0;
   padding: 0;
@@ -142,11 +142,11 @@ nav ul {
 /* links */
 nav a {
   font-size: var(--font-size-content-lg);
-  color: var(--accent);
+  color: var(--text-primary);
   text-decoration: none;
 }
 nav a:hover {
-  color: var(--bg-secondary)
+  color: var(--accent)
 }
 /* logo */
 .logo {
