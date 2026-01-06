@@ -2,6 +2,20 @@ gsap.registerPlugin(ScrollTrigger);
 
 document.addEventListener('DOMContentLoaded', function() {
 
+// Resume download link - auto language
+const resumeLink = document.getElementById('resume-link');
+
+if (resumeLink) {
+  const currentPage = window.location.pathname.split('/').pop();
+  const isEnglish = currentPage.includes('-en');
+
+  if (isEnglish) {
+    resumeLink.href = 'files/Alcaraz_CV_En.pdf';
+  } else {
+    resumeLink.href = 'files/Alcaraz_CV_Fr.pdf';
+  }
+}
+
 // Mobile menu toggle
 const hamburger = document.getElementById('hamburger');
 const mobileMenu = document.getElementById('mobile-menu');

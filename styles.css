@@ -162,6 +162,15 @@ nav a:hover {
   justify-content: center;
   margin-top: auto;
 }
+.footer-contact,
+.footer-links {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-4);
+  background-color: #BBC9BB;
+  padding: var(--space-4);
+  border-radius: 16px;
+}
 /* nav */
 button.hamburger {
   display: none;
