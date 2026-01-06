@@ -3,6 +3,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Alcaraz Portfolio</title>
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -13,20 +14,21 @@
         <p class="logo">Maria Alcaraz</p>
         <nav>
             <ul>
-                <li><a href="index.html">Work</a></li>
+                <li><a href="Home.html">Work</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
      </header>
 
 <!-- HOME -->
      <section id="hero">
-        <h1>Big impactful sentence goes here</h1>
-        <p>smaller impactful sentence here</p>
+        <div class="container-medium">
+            <h1>Big impactful sentence goes here</h1>
+            <p>smaller impactful sentence here</p>
+        </div>
      </section>
 
-     <section id="project-list">
+     <section id="project-list" class="container-narrow">
         <a href="pr1_quest.html">
             <div class="project-card">
                 <img src="Images/questionnaires_carte.jpg" alt="Project 1 preview">
@@ -45,12 +47,25 @@
         </a>
      </section>
 
-     <section id="other">
 
-     </section>
-
-
+<footer class="site-footer">
+    <a href="mailto:marialalc@gmail.com" class="button">
+        <img src="Images/footer_mail.png" alt="" class="icon">
+        marialalc@gmail.com
+    </a>
+    <a href="tel:+15149844996" class="button">
+        <img src="Images/footer_phone.png" alt="" class="icon">
+        514 984 4996
+    </a>
+    <a href="https://www.linkedin.com/in/maria-alcaraz/" class="button" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+</footer>
 
  <script src="script.js"></script>
+
+
+
 </body>
+
+
+
 </html>
