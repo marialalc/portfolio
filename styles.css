@@ -358,30 +358,37 @@ button.hamburger {
 }
 
 /* --- PROJECT LIST --- */
-#project-list {
+.projects {
+  display: flex;
+  flex-direction: column;
+  padding-top: var(--space-8);
+  padding-bottom: var(--space-8);
+  gap: var(--space-5);
+
+}
+.project-list {
   display: flex;
   width: 100%;
   flex-direction: row;
   gap: var(--space-5);
-  padding-top: var(--space-9);
-  padding-bottom: var(--space-9);
 }
-#pr-project-list {
+.pr-project-list {
   background-color: #F2F1F1;
 }
-#project-list > a {
+.project-list > a {
   flex: 1;
   min-width: 0;
 }
 .project-card {
   background-color: white;
   display: flex;
-  height: 416px;
+  height: 390px;
   flex: 1;
   flex-direction: column;
   gap: var(--space-1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   line-height: var(--line-height-normal);
+  border-radius: 8px;
 }
 .project-card:hover {
   transform: translateY(-8px);
@@ -389,7 +396,7 @@ button.hamburger {
 }
 .project-card img {
   width: 100%;
-  height: 200px;
+  height: 150px;
   object-fit: cover;
 }
 .card-content {
@@ -885,7 +892,7 @@ button.hamburger {
     display: flex;
     flex-direction: row;
     gap: var(--space-9);
-    padding-bottom: var(--space-9);
+    padding-bottom: var(--space-4);
 }
   .pr2-hero-columns > ul {
     list-style: none;
@@ -1350,7 +1357,7 @@ button.hamburger {
   }
 
 /*-- HOME --*/
-#project-list {
+.project-list {
   flex-direction: column;
   gap: var(--space-6);
 }
@@ -1364,7 +1371,7 @@ button.hamburger {
   text-align: center;
 }
 .project-card {
-  height: 320px;
+  height: auto;
 }
 .project-card img {
   height: 120px;
@@ -1555,6 +1562,7 @@ button.hamburger {
     overflow-x: hidden;
     max-width: 100vw;
     gap: var(--space-4);
+    padding-top: var(--space-6);
   }
   #pr2-hero img {
     width: 230%;
@@ -1644,16 +1652,19 @@ button.hamburger {
     overflow: visible;
   }
   .bubbles-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--space-2);
-  padding: var(--space-3);
-  position: static;
-  height: auto;
-  max-height: 150px;
-  order: 1;
-  width: 100%;
-  margin-left: 0;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+    padding: var(--space-3);
+    position: relative;
+    height: auto;
+    max-height: 150px;
+    order: 1;
+    width: 100%;
+    margin-left: 0;
 }
 
 .comment-bubble {
