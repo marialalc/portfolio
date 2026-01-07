@@ -360,6 +360,7 @@ button.hamburger {
   top: 50%;
   left: 70%;
   animation: float 5s ease-in-out infinite;
+  z-index: 2;
 }
 @keyframes float {
   0% {
@@ -1438,6 +1439,7 @@ button.hamburger {
 #hero {
   height: 320px;
   position: relative;
+  overflow: hidden;
 }
 #hero .container-medium {
   display: flex;
@@ -1463,26 +1465,25 @@ button.hamburger {
   left: 50%;
 }
 #icon-ui {
-  top: 9%;
-  right: 21.5%;
+  top: 5%;
+  right: 24%;
 }
 #icon-screen {
-  top: 6%;
-  right: 39%;
+  opacity: 0;
 }
 #icon-component {
-  top: 20%;
-  right: 5%;
+  opacity: 0;
 }
 #icon-ux {
-  top: 80%;
-  right: 60%;
+  top: 7%;
+  right: 10%;
 }
 #icon-graph {
-  top: 75%;
+  opacity: 0;
 }
 #icon-arrow {
-  top: 60%;
+  top: 70%;
+  left: -20%;
 }
 
 
