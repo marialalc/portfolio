@@ -359,10 +359,38 @@ button.hamburger {
 #home-cursor {
   top: 50%;
   left: 70%;
+  animation: float 5s ease-in-out infinite;
 }
+@keyframes float {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  25% {
+    transform: translate(5px, -8px);
+  }
+  50% {
+    transform: translate(-3px, -12px);
+  }
+  75% {
+    transform: translate(6px, -6px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
 #icon-ui {
   top: 12%;
   right: 15%;
+  animation: bob 3s ease-in-out infinite;
+}
+@keyframes bob {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(2deg);
+  }
 }
 #icon-component {
   top: 26%;
