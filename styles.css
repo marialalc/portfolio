@@ -323,6 +323,7 @@ button.hamburger {
   border: 1px solid #858585;
   padding: 6px 16px;
   border-radius: 50px;
+  font-size: 1.2rem;
 }
 
 .home-icons {
@@ -1395,23 +1396,33 @@ button.hamburger {
 
 /*-- HOME --*/
 #hero {
-  padding-top: 80px;
-  padding-bottom: 80px;
-  min-height: 320px;
+  height: 320px;
+  position: relative;
 }
 #hero .container-medium {
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  height: 100%;
+  position: relative;
+}
+.home-icons {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  pointer-events: none;
+}
+.hero-pill {
+  font-size: 1rem;
 }
 .project-list {
   flex-direction: column;
   gap: var(--space-6);
 }
-.home-icons {
-  height: 200px
-}
+
 
 .project-card {
   height: auto;
