@@ -386,27 +386,39 @@ button.hamburger {
 }
 @keyframes bob {
   0%, 100% {
-    transform: translateY(0px) rotate(0deg);
+    transform: translateY(0px);
   }
   50% {
-    transform: translateY(-10px) rotate(2deg);
+    transform: translateY(-5px);
   }
 }
 #icon-component {
   top: 26%;
   right: 15%;
+  animation: bob 3s ease-in-out infinite;
 }
 #icon-screen {
   top: 12%;
   right: 22%;
+  animation: bob 3s ease-in-out infinite;
 }
 #icon-graph {
   top: 65%;
   right: 77%;
+  animation: slide 3s ease-in-out infinite;
 }
 #icon-ux {
   top: 79%;
   right: 73%;
+  animation: slide 3s ease-in-out infinite;
+}
+@keyframes slide {
+  0%, 100% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(-5px);
+  }
 }
 #icon-sparkle {
   top: 65%;
@@ -1446,6 +1458,36 @@ button.hamburger {
 .hero-pill {
   font-size: 1rem;
 }
+#home-cursor {
+  top: 67%;
+  left: 50%;
+}
+#icon-ui {
+  top: 9%;
+  right: 21.5%;
+}
+#icon-screen {
+  top: 6%;
+  right: 39%;
+}
+#icon-component {
+  top: 20%;
+  right: 5%;
+}
+#icon-ux {
+  top: 80%;
+  right: 60%;
+}
+#icon-graph {
+  top: 75%;
+}
+#icon-arrow {
+  top: 60%;
+}
+
+
+
+
 .project-list {
   flex-direction: column;
   gap: var(--space-6);
