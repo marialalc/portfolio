@@ -159,8 +159,9 @@ fadeRightElements.forEach(element => {
         gsap.to(bubble, {
           opacity: 1,
           y: 0,
-          duration: 0.6,
-          delay: index * 0.3,
+          duration: 0.3,
+          delay: index * 0.7,
+          ease: "back.out(1.7)",
           scrollTrigger: {
             trigger: sectionId,
             start: 'top 70%',

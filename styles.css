@@ -254,7 +254,7 @@ button.hamburger {
   .image-with-annotations .bubble {
     position: absolute;
     opacity: 0;
-    transform: translateX(20px);
+    transform: translateY(20px);
     transition: opacity 0.6s ease, transform 0.6s ease;
   }
   .image-with-annotations .bubble.visible {
