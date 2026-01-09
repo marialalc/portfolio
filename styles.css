@@ -1374,18 +1374,90 @@ button.hamburger {
   display: flex;
   flex-direction: column;
   gap: var(--space-7);
+  align-items: center;
 }
-#pr3-context img {
+.funnel-container {
+  position: relative;
+  max-width: 1220px;
+  margin: 0 auto;
   width: 100%;
 }
+#pr3-funnel {
+  width: 100%;
+  display: block;
+}
+
+.flowchart {
+  position: relative;
+  padding-top: var(--space-8);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-7);
+  max-width: 960px;
+}
+.flowchart-lvl1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: var(--space-8);
+}
+.flowchart-lvl2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.flow-box {
+  background-color: white;
+  padding: var(--space-3);
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  width: 220px;
+  line-height: var(--line-height-normal);
+  border-radius: 8px;
+  justify-content: center;
+}
+.box-3 {
+  background-color: #20413A;
+  color: var(--text-inverted);
+  width: 250px;
+}
+
+
 
 #pr3-foundations {
   padding-top: var(--space-9);
   padding-bottom: var(--space-9);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+  align-items: center;
 }
 #pr3-foundations img {
   width: 100%;
 }
+
+#pr3-test {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+}
+.assumptions {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-5);
+  width: 100%;
+}
+.box-4,
+.box-5,
+.box-6 {
+  width: 280px;
+}
+
+
+
+
 
 #pr3-test {
   padding-top: var(--space-9);
@@ -1879,6 +1951,22 @@ button.hamburger {
 }
 #pr2_showcase img {
   height: 300px;
+}
+
+
+.flowchart {
+  width: 100%;
+  padding-left: var(--space-3);
+  padding-right: var(--space-3);
+}
+.flowchart-lvl1 {
+  width: 100%;
+  gap: var(--space-4);
+}
+.assumptions {
+  flex-direction: column;
+  gap: var(--space-3);
+  align-items: center;
 }
 
 }
