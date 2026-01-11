@@ -2125,11 +2125,32 @@ button.hamburger {
   width: 100%;
   padding-left: var(--space-3);
   padding-right: var(--space-3);
+  gap: var(--space-8);
+}
+.line-vertical-left,
+.line-vertical-right,
+.line-horizontal {
+  display: none;
+}
+.line-vertical-middle {
+  top: 0%;
+  height: 170px;
+}
+.line-arrow {
+  left: 50.2%;
+  top: 110%;
 }
 .flowchart-lvl1 {
+  flex-direction: column;
+  align-items: center;
   width: 100%;
   gap: var(--space-4);
 }
+
+
+
+
+
 .assumptions {
   flex-direction: column;
   gap: var(--space-3);
