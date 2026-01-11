@@ -1442,6 +1442,8 @@ button.hamburger {
   display: flex;
   flex-direction: column;
   gap: var(--space-8);
+  padding-top: var(--space-9);
+  padding-bottom: var(--space-9);
 }
 .assumptions {
   display: flex;
@@ -1509,12 +1511,38 @@ button.hamburger {
   align-self: flex-start;
 }
 
-
-
-#pr3-test {
-  padding-top: var(--space-9);
-  padding-bottom: var(--space-9);
+#pr3-results {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-7);
 }
+.pr3-result-item {
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  align-items: center;
+}
+.pr3-result-item h3 {
+  text-align: center;
+}
+.percent {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-3);
+  align-items: center;
+  width: 220px;
+}
+.percent > p:nth-child(2) {
+  line-height: var(--line-height-normal);
+}
+.percent > p:nth-child(1) {
+  font-size: 3.7rem;
+  font-family: Gloock;
+  color: var(--accent);
+}
+
+
 
 
 
