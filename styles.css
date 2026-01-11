@@ -1368,6 +1368,10 @@ button.hamburger {
 /* ==============================================
                 PR3
 ============================================== */
+#pr3-intro {
+  padding-top: var(--space-9);
+  padding-bottom: var(--space-9);
+}
 #pr3-context {
   padding-top: var(--space-9);
   padding-bottom: var(--space-9);
@@ -1393,10 +1397,11 @@ button.hamburger {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: var(--space-7);
+  gap: var(--space-9);
   max-width: 960px;
 }
 .flowchart-lvl1 {
+  position: relative;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -1422,6 +1427,55 @@ button.hamburger {
   background-color: #20413A;
   color: var(--text-inverted);
   width: 250px;
+}
+
+.box-1::after {
+    content: "";
+    position: absolute;
+    bottom: -30px; /* Adjust based on gap */
+    left: 20%;
+    width: 2px;
+    height: 30px;
+    background-color: #FF636B;
+}
+.box-2::after {
+    content: "";
+    position: absolute;
+    bottom: -30px; /* Adjust based on gap */
+    left: 80%;
+    width: 2px;
+    height: 30px;
+    background-color: #FF636B;
+}
+.flowchart-lvl1::after {
+    content: "";
+    position: absolute;
+    bottom: -30px;
+    left: 20%; /* Adjust to connect the lines */
+    width: 60%;
+    height: 2px;
+    background-color: #FF636B;
+}
+.flowchart-lvl2::before {
+    content: "";
+    position: absolute;
+    top: 184px;
+    left: 50%;
+    width: 2px;
+    height: 30px;
+    background-color: #FF636B;
+}
+.flowchart-lvl2::after {
+    content: "";
+    position: absolute;
+    top: 210px;
+    left: 50.2%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 8px solid #FF636B;
 }
 
 
