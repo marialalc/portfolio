@@ -1523,9 +1523,7 @@ button.hamburger {
   gap: var(--space-4);
   align-items: center;
 }
-.pr3-result-item h3 {
-  text-align: center;
-}
+
 .percent {
   display: flex;
   flex-direction: row;
@@ -1539,9 +1537,18 @@ button.hamburger {
 .percent > p:nth-child(1) {
   font-size: 3.7rem;
   font-family: Gloock;
-  color: var(--accent);
+  color: var(--text-primary);
+}
+.percent-wider {
+  width: 350px;
 }
 
+
+
+#pr3-final img {
+  width: 300px;
+  height: auto;
+}
 
 
 
