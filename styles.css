@@ -2069,4 +2069,8 @@ button.hamburger {
   max-width: 130px;
 }
 
+.percent > p:nth-child(1) {
+  font-size: 3rem;
+}
+
 }
