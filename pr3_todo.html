@@ -94,32 +94,14 @@
             <img src="Images/pr3-funnel.png" alt="" id="pr3-funnel"/>
             <div class="circle-highlight"></div>
         </div>
-
         <div class="flowchart">
-            <svg class="flowchart-lines" xmlns="http://www.w3.org/2000/svg">
-                <!-- Define arrow marker -->
-                <defs>
-                    <marker id="arrow" markerWidth="10" markerHeight="10"
-                            refX="9" refY="3" orient="auto">
-                        <polygon points="0 0, 10 3, 0 6" fill="#FF636B"/>
-                    </marker>
-                </defs>
-
-                <!-- Path from box-1 down, across, then down to box-3 -->
-                <path class="line-1"
-                    d="M 30% 120 L 30% 170 L 50% 170 L 50% 220"
-                    stroke="#FF636B"
-                    stroke-width="2"
-                    fill="none"
-                    marker-end="url(#arrow)"/>
-
-                <!-- Path from box-2 down, across, then down to box-3 -->
-                <path class="line-2"
-                    d="M 70% 120 L 70% 170 L 50% 170"
-                    stroke="#FF636B"
-                    stroke-width="2"
-                    fill="none"/>
-            </svg>
+            <div class="connector-lines">
+                <div class="line line-vertical-left"></div>
+                <div class="line line-horizontal"></div>
+                <div class="line line-vertical-right"></div>
+                <div class="line line-vertical-middle"></div>
+                <div class="line-arrow"></div>
+            </div>
             <div class="flowchart-lvl1">
                 <div class="flow-box box-1">
                     <strong class="text-sm">Objectif contenu</strong>
@@ -151,7 +133,7 @@
             <p>Pour ce faire, j’ai identifié les hypothèses que nous devions valider.</p>
         </div>
         <div class="pr3-structure container-medium">
-            <img src="Images/pr3-chart.svg" alt="">
+            <img src="Images/pr3-chart.svg" alt="" class="fade-in-up">
         </div>
 
 <!-- TEST -->
@@ -159,7 +141,7 @@
 
         <div class="container-narrow">
             <h2>De l’idée au test en une semaine</h2>
-            <p>Comment tester nos hypothèses sans écrire une ligne de code? À l’aide des outils déjà disponibles — Typeform, un quiz pilote rédigé par nos experts et l’infolettre — j’ai mis en place une version éphémère du quiz afin de tester trois des quatre hypothèses formulées.</p>
+            <p>Comment tester nos hypothèses sans écrire une ligne de code? À l’aide des outils déjà disponibles, j’ai mis en place une version éphémère du quiz afin de tester trois des quatre hypothèses formulées.</p>
             <p>La rétention ne pouvait être mesurée hors de l’application, mais cette approche permettait néanmoins de valider l’intérêt des utilisateurs pour le format.</p>
         </div>
 
@@ -203,12 +185,12 @@
         </div>
     </section>
 
-    <section id="pr3-results">
-        <div class="container-narrow">
+    <section id="pr3-results" class="container-narrow">
+        <div class="results-text">
             <h2>Grand engagement, forte satisfaction</h2>
             <p>Pendant le week-end, un grand nombre d’abonnés à l’infolettre ont cliqué sur le quiz et l’ont complété. Leur comportement nous a permi de répondre à nos questions de recherche.</p>
         </div>
-        <div class="pr3-result-item container-narrow">
+        <div class="pr3-result-item">
             <h3>Les utilisateurs sont-ils intéressés par ce contenu&nbsp;?</h3>
             <div class="percent fade-in-up">
                 <p>11%</p>
@@ -216,7 +198,7 @@
             </div>
             <p>Le taux de clic égalait ou dépassait celui des autres CTAs de l’infolettre, ce qui indique que les utilisateurs étaient curieux et disposés à interagir avec ce type de contenu.</p>
         </div>
-        <div class="pr3-result-item container-narrow">
+        <div class="pr3-result-item">
             <h3>Les utilisateurs complètent-ils le quiz&nbsp;?</h3>
             <div class="percent percent-wider fade-in-up">
                 <p>4,4%</p>
@@ -228,7 +210,7 @@
             </div>
             <p>Les taux de complétion et de rebond indiquaient que le quiz était facile à suivre et suffisamment engageant pour être complété.</p>
         </div>
-        <div class="pr3-result-item container-narrow">
+        <div class="pr3-result-item">
             <h3>Les utilisateurs aiment-ils le quiz&nbsp;?</h3>
             <svg id="pr3-chart" width="100%" height="194" viewBox="0 0 491 194" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g id="percent-pas-genial">
