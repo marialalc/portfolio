@@ -237,7 +237,7 @@ fadeRightElements.forEach(element => {
   }
 
   // ============================================
-  // BAR CHART ANIMATION
+  // PR2 BAR CHART ANIMATION
   // ============================================
   if (document.querySelector('#pr2_data svg')) {
     gsap.set(['#bar-1', '#bar-2', '#bar-3', '#bar-4', '#bar-5', '#bar-6'], {
@@ -309,6 +309,40 @@ fadeRightElements.forEach(element => {
       });
     });
   }
+
+// ============================================
+// PR3 CHART ANIMATION
+// ============================================
+if (document.querySelector('#pr3-chart')) {
+  const barBienOriginal = document.querySelector('#bar-bien').getAttribute('width');
+  const barBofOriginal = document.querySelector('#bar-bof').getAttribute('width');
+  const barPasGenialOriginal = document.querySelector('#bar-pas-genial').getAttribute('width');
+
+
+  gsap.set('#bar-bien', { attr: { width: 0 } });
+  gsap.set('#bar-bof', { attr: { width: 0 } });
+  gsap.set('#bar-pas-genial', { attr: { width: 0 } });
+
+
+  gsap.set(['#percent-bien', '#percent-bof', '#percent-pas-genial'], {
+    opacity: 0
+  });
+
+
+  const tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: '#pr3-chart',
+      start: 'top 70%'
+    }
+  });
+
+  tl.to('#bar-bien', { attr: { width: barBienOriginal }, duration: 0.6, ease: 'power2.out' })
+    .to('#percent-bien', { opacity: 1, duration: 0.3 })
+    .to('#bar-bof', { attr: { width: barBofOriginal }, duration: 0.6, ease: 'power2.out' })
+    .to('#percent-bof', { opacity: 1, duration: 0.3 })
+    .to('#bar-pas-genial', { attr: { width: barPasGenialOriginal }, duration: 0.6, ease: 'power2.out' })
+    .to('#percent-pas-genial', { opacity: 1, duration: 0.3 });
+}
 
   // Refresh ScrollTrigger after page loads
   window.addEventListener('load', () => {
