@@ -132,7 +132,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: var(--space-4) var(--space-8);
+  padding: var(--space-2) var(--space-8);
 }
 /* link container */
 nav ul {
@@ -153,7 +153,12 @@ nav a:hover {
 }
 /* logo */
 .logo {
-  font-size: var(--font-size-content-lg)
+  font-family: Gloock;
+  font-size: var(--font-size-content-lg);
+  transition: color 0.3s ease;
+}
+.logo:hover {
+  color: var(--accent);
 }
 .site-footer {
   background-image: url('Images/background-grain.png');
