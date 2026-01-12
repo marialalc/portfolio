@@ -310,6 +310,19 @@ fadeRightElements.forEach(element => {
     });
   }
 
+// ============================================
+// PR3 CONNECTOR LINES
+// ============================================
+  gsap.from(".horizontal-swipe", {
+    clipPath: "inset(0 100% 0 0)",
+    duration: 1.7,
+    ease: "power2.out",
+    scrollTrigger: {
+      trigger: ".horizontal-swipe",
+      start: "top 80%"
+    }
+  });
+
 
 // ============================================
 // PR3 CONNECTOR LINES
@@ -321,7 +334,7 @@ fadeRightElements.forEach(element => {
   ease: "power2.out",
   scrollTrigger: {
     trigger: ".connector-lines",
-    start: "top 80%"  // Animation starts when element is 80% down the viewport
+    start: "top 80%"
   }
 });
 
