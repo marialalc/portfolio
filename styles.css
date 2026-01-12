@@ -1368,6 +1368,12 @@ button.hamburger {
 /* ==============================================
                 PR3
 ============================================== */
+#pr3-hero {
+  padding-top: var(--space-7);
+}
+#pr3-hero img {
+  width: 100%;
+}
 #pr3-intro {
   padding-top: var(--space-9);
   padding-bottom: var(--space-9);
@@ -1385,15 +1391,18 @@ button.hamburger {
   max-width: 1220px;
   margin: 0 auto;
   width: 100%;
+  padding: var(--space-4);
+  padding-right: var(--space-4);
 }
 #pr3-funnel {
   width: 100%;
   display: block;
 }
 
+
 .flowchart {
   position: relative;
-  padding-top: var(--space-8);
+  padding-top: var(--space-6);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1440,34 +1449,34 @@ button.hamburger {
   width: 100%;
   height: 150px;
 }
-.line-vertical-left {
-  position: absolute;
-  left: 30%;
-  top: 0;
-  width: 2px;
-  height: 69px;
-  background-color: var(--accent);
-}
+.line-vertical-left,
 .line-vertical-right {
   position: absolute;
+  width: 2px;
+  height: 46px;
+  background-color: var(--accent);
+}
+.line-vertical-left {
+  left: 30%;
+  top: 0;
+}
+.line-vertical-right {
   left: 68%;
   top: 0;
   width: 2px;
-  height: 69px;
-  background-color: var(--accent);
 }
 .line-horizontal {
   position: absolute;
   left: 30%;
-  top: 45%;
-  width: 280px;
+  top: 30%;
+  width: 191px;
   height: 2px;
   background-color: var(--accent);
 }
 .line-vertical-middle {
   position: absolute;
   left: 50%;
-  top: 45%;
+  top: 30%;
   width: 2px;
   height: 25px;
   background-color: var(--accent);
@@ -1475,19 +1484,19 @@ button.hamburger {
 .line-arrow {
   position: absolute;
   left: 50.15%;
-  bottom: 33%;
-  transform: translateX(-50%); /* Centers it horizontally */
+  top: 42%;
+  transform: translateX(-50%);
   width: 0;
   height: 0;
   border-left: 6px solid transparent;
   border-right: 6px solid transparent;
-  border-top: 8px solid #FF636B;
+  border-top: 8px solid var(--accent)
 }
 
 
 
 #pr3-foundations {
-  padding-top: var(--space-9);
+  padding-top: var(--space-7);
   padding-bottom: var(--space-9);
   display: flex;
   flex-direction: column;
@@ -1532,7 +1541,7 @@ button.hamburger {
   padding: 40px 0;
   display: flex;
   flex-direction: column;
-  gap: var(--space-5);
+  gap: var(--space-7);
 }
 .timeline-item {
   display: flex;
@@ -2126,6 +2135,7 @@ button.hamburger {
   padding-left: var(--space-3);
   padding-right: var(--space-3);
   gap: var(--space-8);
+  padding-top: 0;
 }
 .line-vertical-left,
 .line-vertical-right,
@@ -2133,12 +2143,12 @@ button.hamburger {
   display: none;
 }
 .line-vertical-middle {
-  top: 0%;
+  top: -45%;
   height: 170px;
 }
 .line-arrow {
   left: 50.2%;
-  top: 110%;
+  top: 66%;
 }
 .flowchart-lvl1 {
   flex-direction: column;
@@ -2174,11 +2184,14 @@ button.hamburger {
   gap: var(--space-3);
 }
 .timeline-img {
-  max-width: 130px;
+  max-width: 120px;
 }
 
 #pr3-results {
   max-width: 100%;
+}
+.pr3-result-item:nth-child(4) {
+  gap: 0;
 }
 .pr3-result-item {
   max-width: 100%;
@@ -2189,6 +2202,10 @@ button.hamburger {
 }
 .percent > p:nth-child(1) {
   font-size: 3rem;
+}
+
+#pr3-final img {
+  width: 70%;
 }
 
 }
