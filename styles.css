@@ -1737,9 +1737,12 @@ button.hamburger {
   body {
     overflow-x: hidden;
   }
-  .button {
-    width: 220px;
+  .button,
+  .button-secondary {
+    width: 100%;
+    max-width: 100%;
   }
+
   .site-footer {
     flex-direction: column;
     align-items: center;
@@ -1747,6 +1750,9 @@ button.hamburger {
   }
   .footer-contact,
   .footer-links {
+    flex-direction: column;
+  }
+  .pr-end-buttons {
     flex-direction: column;
   }
 
