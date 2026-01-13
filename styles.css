@@ -518,7 +518,7 @@ button.hamburger {
 #icon-star {
   top: 68%;
   right: 75%;
-  animation: spin 3s ease-in-out infinite;
+  animation: spin 4s ease-in-out infinite;
 }
 @keyframes spin {
   0% {
@@ -1810,11 +1810,8 @@ button.hamburger {
 }
 #home-cursor {
   top: 67%;
-  left: 50%;
-}
-#icon-ui {
-  top: 5%;
-  right: 24%;
+  left: 42%;
+  width: 60%;
 }
 #icon-screen {
   opacity: 0;
@@ -1822,16 +1819,16 @@ button.hamburger {
 #icon-component {
   opacity: 0;
 }
-#icon-ux {
-  top: 7%;
-  right: 10%;
-}
-#icon-graph {
-  opacity: 0;
+#icon-sparkle {
+  top: 18%;
+  right: 5%;
 }
 #icon-arrow {
-  top: 70%;
-  left: -20%;
+  top: -8%;
+  left: -10%;
+}
+#icon-star {
+  opacity: 0;
 }
 
 
