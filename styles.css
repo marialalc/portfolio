@@ -403,39 +403,8 @@ button.hamburger {
 /* ==============================================
           ABOUT
 ============================================== */
-.about-container {
-  display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
-  gap: var(--space-7);
-  max-width: 1400px;
-  margin: 0 auto;
+#paragraphs {
   padding: var(--space-9) var(--space-8);
-}
-.about-left,
-.about-right {
-  position: sticky;
-  top: 100px;
-  height: fit-content;
-}
-.side-item {
-  position: absolute;
-  opacity: 0;
-  transition: opacity 0.6s ease;
-}
-.side-item.active {
-  opacity: 1;
-}
-
-.about-content {
-  /* Flows normally */
-}
-
-.text-section {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-4);
-  min-height: 60vh;
-  padding: var(--space-6) 0;
 }
 
 
