@@ -1824,8 +1824,9 @@ button.hamburger {
   right: 80%;
 }
 #icon-arrow {
-  top: -8%;
-  left: -10%;
+  top: -7%;
+  left: -6%;
+  scale: .8;
 }
 #icon-star {
   opacity: 0;
