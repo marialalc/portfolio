@@ -50,6 +50,54 @@ const languageToggle = document.getElementById('language-toggle');
   }
 
 // ============================================
+// ABOUT PAGE - TIMELINE IMAGES
+// ============================================
+if (document.querySelector('.about-container')) {
+  const textSections = document.querySelectorAll('.text-section');
+
+  textSections.forEach(section => {
+    const sectionNum = section.getAttribute('data-section');
+
+    ScrollTrigger.create({
+      trigger: section,
+      start: "top center",
+      end: "bottom center",
+
+      onEnter: () => {
+        // Hide all images
+        document.querySelectorAll('.side-item').forEach(img => {
+          img.classList.remove('active');
+        });
+
+        // Show images for this section
+        document.querySelectorAll(`.side-item[data-section="${sectionNum}"]`).forEach(img => {
+          img.classList.add('active');
+        });
+      },
+
+      onLeaveBack: () => {
+        // When scrolling back up, show previous section's images
+        const prevSectionNum = parseInt(sectionNum) - 1;
+
+        document.querySelectorAll('.side-item').forEach(img => {
+          img.classList.remove('active');
+        });
+
+        if (prevSectionNum > 0) {
+          document.querySelectorAll(`.side-item[data-section="${prevSectionNum}"]`).forEach(img => {
+            img.classList.add('active');
+          });
+        }
+      }
+    });
+  });
+}
+
+
+
+
+
+// ============================================
 // FADE IN FROM BOTTOM ANIMATION
 // ============================================
 const fadeElements = gsap.utils.toArray('.fade-in-up');
