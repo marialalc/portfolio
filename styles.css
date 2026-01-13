@@ -447,7 +447,7 @@ button.hamburger {
   background-image: url('Images/background-grain.png');
   background-position: center;
   background-size: cover;
-  height: 450px;
+  height: 430px;
 }
 .hero-text {
   display: flex;
@@ -459,11 +459,10 @@ button.hamburger {
   display: inline-flex;
   flex-direction: row;
   border: 1px solid #858585;
-  padding: 6px 16px;
+  padding: 4px 16px;
   border-radius: 50px;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
-
 .home-icons {
   position: absolute;
   top: 0;
@@ -484,12 +483,10 @@ button.hamburger {
 }
 
 #home-cursor,
-#icon-ui,
 #icon-component,
 #icon-screen,
-#icon-graph,
-#icon-ux,
 #icon-sparkle,
+#icon-star,
 #icon-arrow {
   position: absolute;
 }
@@ -518,10 +515,18 @@ button.hamburger {
   }
 }
 
-#icon-ui {
-  top: 12%;
-  right: 15%;
-  animation: bob 3s ease-in-out infinite;
+#icon-star {
+  top: 68%;
+  right: 75%;
+  animation: spin 3s ease-in-out infinite;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 @keyframes bob {
   0%, 100% {
@@ -532,43 +537,25 @@ button.hamburger {
   }
 }
 #icon-component {
-  top: 26%;
-  right: 15%;
+  top: 18%;
+  right: 10%;
   animation: bob 3s ease-in-out infinite;
 }
 #icon-screen {
-  top: 12%;
-  right: 22%;
-  animation: bob 3s ease-in-out infinite;
-}
-#icon-graph {
-  top: 65%;
-  right: 77%;
-  animation: slide 3s ease-in-out infinite;
-}
-#icon-ux {
-  top: 79%;
-  right: 73%;
-  animation: slide 3s ease-in-out infinite;
-}
-@keyframes slide {
-  0%, 100% {
-    transform: translateX(0px);
-  }
-  50% {
-    transform: translateX(-5px);
-  }
-}
-#icon-sparkle {
-  top: 65%;
-  right: 71%;
-}
-#icon-arrow {
-  top: 70%;
-  left: 50%;
+  top: 10%;
+  right: 17%;
 }
 
-/* --- PROJECT LIST --- */
+#icon-sparkle {
+  top: 28%;
+  right: 19%;
+}
+#icon-arrow {
+  top: 4%;
+  left: 20%;
+  transform: scaleY(-1);
+}
+
 
 
 
