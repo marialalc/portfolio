@@ -400,12 +400,7 @@ button.hamburger {
   border-radius: 4px;
 }
 
-/* ==============================================
-          ABOUT
-============================================== */
-#paragraphs {
-  padding: var(--space-9) var(--space-8);
-}
+
 
 
 /* ==============================================
@@ -487,7 +482,7 @@ button.hamburger {
 #icon-star {
   top: 68%;
   right: 75%;
-  animation: spin 4s ease-in-out infinite;
+  animation: spin 7s ease-in-out infinite;
 }
 @keyframes spin {
   0% {
@@ -524,7 +519,11 @@ button.hamburger {
   left: 20%;
   transform: scaleY(-1);
 }
-
+#about {
+  background-color: #DEEBE8;
+  padding-top: var(--space-9);
+  padding-bottom: var(--space-9);
+}
 
 
 
@@ -949,7 +948,8 @@ button.hamburger {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: var(--space-9) var(--space-10);
+  padding-bottom: var(--space-9);
+  padding-top: var(--space-9);
   gap: var(--space-3);
 }
 .featured {
