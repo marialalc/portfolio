@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio • Maria Alcaraz</title>
+  <title>Redesigning Questionnaires • Maria Alcaraz</title>
   <link rel="stylesheet" href="styles.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
@@ -42,10 +42,201 @@
      </div>
 
 
+<!-- HERO -->
+   <section id="pr1-hero">
+      <h1 class="container-medium">Redesigning Luci’s&nbsp;Questionnaires</h1>
 
+      <img src="Images/pr1_hero.png" alt="hero image" class="fade-in-right"/>
 
+      <div class="pr1-hero-columns container-medium">
+         <ul class="text-sm">
+            <li><strong>Year:</strong> 2023-2024</li>
+            <li><strong>My Role:</strong> Principal designer</li>
+            <li><strong>Type:</strong> Redesign</li>
+            <li><strong>Plateforms:</strong> Web (mobile and desktop)</li>
+         </ul>
 
+         <h3 class="pr1-slug">Creating a faster, friendlier, and more representative self-assessment experience</h3>
 
+      </div>
+      </section>
+
+<!-- CONTEXT -->
+     <section id="pr1-context">
+         <div class="container-narrow">
+            <h2>Why it needed to be&nbsp;done</h2>
+            <div class="paragraphs">
+               <p>Luci helps Canadians adopt healthier lifestyles. A key feature is a <strong>self-assessment questionnaire</strong> where users report their habits across three areas: physical activity, nutrition, and cognitive stimulation.</p>
+               <p>These questionnaires are essential for helping users understand their next steps. However, they were long, ambiguous, and difficult to understand. As the first step in the journey, they slowed users down and discouraged engagement.</p>
+            </div>
+         </div>
+     </section>
+<!-- INITIATIVE -->
+     <section class="initiative-section">
+         <div class="container-narrow text-inverted">
+            <div>Initiative</div>
+            <p class="text-lg">Simplify the questionnaire experience to reduce <strong>completion time</strong> and improve the <strong>user experience</strong>, while maintaining the robustness of the data.</p>
+         </div>
+     </section>
+<!-- USERS -->
+     <section id="pr1-users">
+         <div class="container-narrow">
+            <h2>What users were telling us</h2>
+            <p>A series of user tests at the start of the initiative helped me observe and validate the main friction points. Watching users move through the flow revealed an experience that felt demanding, long, and ambiguous.</p>
+         </div>
+
+         <div id="emoji-list-container">
+            <div class="emoji-list">
+               <span>⏳</span><span>"It takes too long to complete."</span>
+            </div>
+            <div class="emoji-list">
+               <span>🤔</span><span>"How many servings? Minutes? I can’t remember."</span>
+            </div>
+            <div class="emoji-list">
+               <span>🔍</span><span>"I can’t review my answers."</span>
+            </div>
+            <div class="emoji-list">
+               <span>🗺️</span><span>"Where am I? How many questions are left?"</span>
+            </div>
+         </div>
+      </section>
+<!-- PERSONA -->
+      <section id="pr1-persona">
+         <div class="container-medium">
+            <p class="container-narrow">Based on the user tests, I also created a proto-persona.</p>
+
+            <div class="persona-card fade-in-up">
+               <img src="Images/pr2_persona.png" class="persona-img" alt="illustration de Beatriz"/>
+               <div class="persona-card-text">
+               <div class="persona-title-bio">
+                  <h2>Beatriz</h2>
+                  <p>Beatriz, 52, leads a busy life but wants to take better care of her health. She’s looking for simple, clear tools to understand and improve her habits without getting lost in complexity. Not very comfortable with technical interfaces, she prefers solutions that are reliable and easy to use.</p>
+               </div>
+               <div class="persona-columns">
+                  <div>
+                     <h4>Needs</h4>
+                     <ul>
+                     <li>Get an overview of her current habits</li>
+                     <li>Quickly understand where to focus her efforts for change</li>
+                     <li>Trust the assessment being provided</li>
+                     </ul>
+                  </div>
+                  <div>
+                     <h4>Paint points</h4>
+                     <ul>
+                     <li>Feels overwhelmed by the amount of information available online</li>
+                     <li>Intimidated by complex tools</li>
+                     <li>Lacks time for overly detailed assessments</li>
+                     </ul>
+                  </div>
+               </div>
+               </div>
+            </div>
+         </div>
+</section>
+
+<!-- OBJECTIVES -->
+   <section id="pr1-objectives">
+   <div class="container-narrow">
+      <h2>Objectives</h2>
+      <p>The questionnaires are essential in helping Luci users direct their efforts. For this reason, we paid particular attention to completion rate and completion time. We also knew that the current experience was not optimal and was causing frustration.</p>
+      <ul>
+         <li>🎯 Reduce <strong>completion time</strong></li>
+         <li>🎯 Improve the questionnaire <strong>experience</strong></li>
+      </ul>
+   </div>
+   </section>
+<!-- HMW -->
+   <section id="pr1-hmw">
+   <div class="container-medium">
+      <h2>How might we...</h2>
+      <div class="post-it-row fade-in-up">
+         <div class="post-it-red">
+         <p>Reduce the <strong>cognitive load</strong> involved in reporting activities?</p>
+         </div>
+         <div class="post-it-red">
+         <p>Reduce the burden on <strong>memory</strong> by asking for fewer details, without compromising data quality?</p>
+         </div>
+         <div class="post-it-red">
+         <p>Reduce ambiguity and increase <strong>flow</strong> for users who are less comfortable with digital interfaces?</p>
+         </div>
+      </div>
+   </div>
+</section>
+
+<!-- HYPOTHESES -->
+<section id="hypothesis-intro">
+  <p class="container-narrow">The following hypotheses would allow us to see if we can solve the problem.</p>
+</section>
+
+<section class="pr1-hypothesis-protos">
+  <div class="hypothesis-left">
+    <div class="hypothesis-text-container">
+      <!-- Text Block 1 -->
+      <div class="hypothesis-text active" data-index="0">
+        <img src="Images/basket.png" alt="panier d'épicerie"/>
+        <h3>Shopping cart</h3>
+        <p>The initial version of the questionnaires presented sequential yes-or-no questions to identify activities.</p>
+        <p>We tested an activity catalog with a search function and the ability to add activities to the "cart" before moving to the next step.</p>
+      </div>
+
+      <!-- Text Block 2 -->
+      <div class="hypothesis-text" data-index="1">
+        <img src="Images/bar.png" alt="simplification"/>
+        <h3>Simplified Input</h3>
+        <p>Weekly frequencies and minutes, instead of daily minutes and portions, would be less taxing on memory.</p>
+        <p>We deliberately sacrificed a level of precision to simplify the task: since our scores don't require daily detail, a weekly estimate is sufficient.</p>
+      </div>
+
+      <!-- Text Block 3 -->
+      <div class="hypothesis-text" data-index="2">
+        <img src="Images/dialog.png" alt="language"/>
+        <h3>Natural Language</h3>
+        <p>Fill-in-the-blank sentences with natural language would be more intuitive.</p>
+        <p>Since our audience was not tech savvy, we tested a fill-in-the-blank response mode, and we tested it against a traditional multiple-choice structure.</p>
+      </div>
+    </div>
+
+    <!-- Mobile images - shown only on mobile -->
+    <div class="hypothesis-mobile-images mobile-only">
+      <div class="hypothesis-item">
+        <img src="Images/basket_comp.png" alt="Prototype panier">
+        <div class="hypothesis-text-mobile">
+          <img src="Images/basket.png" alt="panier d'épicerie"/>
+          <h3>Shopping cart</h3>
+          <p>The initial version of the questionnaires presented sequential yes-or-no questions to identify activities.</p>
+          <p>We tested an activity catalog with a search function and the ability to add activities to the "cart" before moving to the next step.</p>
+        </div>
+      </div>
+
+      <div class="hypothesis-item">
+        <img src="Images/input_comp.png" alt="Prototype saisie">
+        <div class="hypothesis-text-mobile">
+          <img src="Images/basket.png" alt="simplification"/>
+          <h3>Simplified Input</h3>
+          <p>Weekly frequencies and minutes, instead of daily minutes and portions, would be less taxing on memory.</p>
+          <p>We deliberately sacrificed a level of precision to simplify the task: since our scores don't require daily detail, a weekly estimate is sufficient.</p>
+        </div>
+      </div>
+
+      <div class="hypothesis-item">
+        <img src="Images/h3_language_proto.png" alt="Prototype language">
+        <div class="hypothesis-text-mobile">
+          <img src="Images/basket.png" alt="language"/>
+          <h3>Natural Language</h3>
+          <p>Fill-in-the-blank sentences with natural language would be more intuitive.</p>
+          <p>Since our audience was not tech savvy, we tested a fill-in-the-blank response mode, and we tested it against a traditional multiple-choice structure.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hypothesis-right desktop-only">
+    <img src="Images/basket_comp.png" alt="Prototype panier">
+    <img src="Images/input_comp.png" alt="Prototype saisie">
+    <img src="Images/h3_language_proto.png" alt="Prototype language">
+  </div>
+</section>
 
 
 
