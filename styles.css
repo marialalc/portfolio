@@ -1553,12 +1553,14 @@ button.hamburger {
   gap: var(--space-8);
   padding-top: var(--space-9);
   padding-bottom: var(--space-9);
+  align-items: center;
 }
 .assumptions {
   display: flex;
   flex-direction: row;
   gap: var(--space-5);
   width: 100%;
+  justify-content: center;
 }
 .flow-box-border {
   background-color: none;
@@ -1636,6 +1638,7 @@ button.hamburger {
   flex-direction: column;
   gap: var(--space-7);
   align-items: center;
+  padding-bottom: var(--space-5);
 }
 .results-text {
   display: flex;
@@ -1673,7 +1676,10 @@ button.hamburger {
 }
 
 
-
+#pr3-final {
+  padding-top: var(--space-9);
+  padding-bottom: var(--space-9);
+}
 #pr3-final img {
   width: 300px;
   height: auto;
