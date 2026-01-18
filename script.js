@@ -31,28 +31,37 @@ if (hamburger && mobileMenu && closeMenu) {
   });
 }
 
-// Language toggle functionality
+// Language toggle
 const languageToggle = document.getElementById('language-toggle');
 
-  if (languageToggle) {  
-    const currentPage = window.location.pathname.split('/').pop();
-    const isEnglish = currentPage.includes('-en');
+if (languageToggle) {
+    let pathname = window.location.pathname;
 
-    // TEMPORARY - Remove after debugging
-    console.log('Current page:', currentPage);
-    console.log('Full pathname:', window.location.pathname);
-    console.log('Is English?', isEnglish);
+    // Get the filename with or without extension
+    let pageName = pathname.split('/').pop();
+
+    // Remove .html if it exists
+    pageName = pageName.replace('.html', '');
+
+    // If empty (homepage), set to 'index'
+    if (pageName === '') {
+        pageName = 'index';
+    }
+
+    const isEnglish = pageName.includes('-en');
 
     if (isEnglish) {
-      languageToggle.textContent = 'FR';
-      const frenchPage = currentPage.replace('-en', '');
-      languageToggle.href = frenchPage;
+        languageToggle.textContent = 'FR';
+        const frenchPage = pageName.replace('-en', '');
+        // Add .html for local, Cloudflare will ignore it
+        languageToggle.href = frenchPage + '.html';
     } else {
-      languageToggle.textContent = 'EN';
-      const englishPage = currentPage.replace('.html', '-en.html');
-      languageToggle.href = englishPage;
+        languageToggle.textContent = 'EN';
+        const englishPage = pageName + '-en';
+        // Add .html for local, Cloudflare will ignore it
+        languageToggle.href = englishPage + '.html';
     }
-  }
+}
 
 
 // ============================================
