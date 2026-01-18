@@ -34,9 +34,14 @@ if (hamburger && mobileMenu && closeMenu) {
 // Language toggle functionality
 const languageToggle = document.getElementById('language-toggle');
 
-  if (languageToggle) {  // Only run if button exists
+  if (languageToggle) {  
     const currentPage = window.location.pathname.split('/').pop();
     const isEnglish = currentPage.includes('-en');
+
+    // TEMPORARY - Remove after debugging
+    console.log('Current page:', currentPage);
+    console.log('Full pathname:', window.location.pathname);
+    console.log('Is English?', isEnglish);
 
     if (isEnglish) {
       languageToggle.textContent = 'FR';
