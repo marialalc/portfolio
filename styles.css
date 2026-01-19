@@ -460,6 +460,8 @@ button.hamburger {
   left: 70%;
   animation: float 5s ease-in-out infinite;
   z-index: 2;
+  transform: translateZ(0);
+  will-change: transform;
 }
 @keyframes float {
   0% {
