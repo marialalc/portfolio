@@ -10,9 +10,9 @@ if (resumeLink) {
   const isEnglish = currentPage.includes('-en');
 
   if (isEnglish) {
-    resumeLink.href = 'files/Alcaraz_CV_En.pdf';
+    resumeLink.href = 'Files/Alcaraz_CV_En.pdf';
   } else {
-    resumeLink.href = 'files/Alcaraz_CV_Fr.pdf';
+    resumeLink.href = 'Files/Alcaraz_CV_Fr.pdf';
   }
 }
 
