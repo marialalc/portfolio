@@ -528,6 +528,14 @@ button.hamburger {
   padding-top: var(--space-9);
   padding-bottom: var(--space-9);
 }
+#about div {
+  justify-content: center;
+  align-items: center;
+}
+#about div p {
+  padding-left: var(--space-8);
+  padding-right: var(--space-8);
+}
 
 
 
@@ -1825,6 +1833,10 @@ button.hamburger {
 }
 .project-card img {
   height: 120px;
+}
+#about div p {
+  padding-left: 0;
+  padding-right: 0;
 }
 
 /*---questionnaires---*/
