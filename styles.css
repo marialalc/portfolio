@@ -464,6 +464,7 @@ button.hamburger {
   will-change: transform;
   image-rendering: crisp-edges;
   -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 @keyframes float {
   0% {
