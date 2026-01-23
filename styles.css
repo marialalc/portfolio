@@ -417,11 +417,8 @@ nav a:hover {
   left: 70%;
   animation: float 5s ease-in-out infinite;
   z-index: 2;
-  transform: translateZ(0);
-  will-change: transform;
-  image-rendering: crisp-edges;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
+
+
 }
 @keyframes float {
   0% {
