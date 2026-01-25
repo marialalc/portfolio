@@ -418,6 +418,7 @@ nav a:hover {
   left: 70%;
   animation: float 5s ease-in-out infinite;
   z-index: 2;
+  filter: drop-shadow(0px 14px 12px rgba(0, 0, 0, 0.12));
 
 
 }
@@ -1746,10 +1747,9 @@ nav a:hover {
   font-size: 1rem;
 }
 #home-cursor {
-  width: 1%;
+  width: 50%;
   top: 67%;
-  left: 42%;
-  width: 60%;
+  left: 46%;
 }
 #icon-screen {
   opacity: 0;
