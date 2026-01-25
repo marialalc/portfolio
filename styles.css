@@ -413,7 +413,8 @@ nav a:hover {
 }
 
 #home-cursor {
-  top: 50%;
+  width: 23%;
+  top: 53%;
   left: 70%;
   animation: float 5s ease-in-out infinite;
   z-index: 2;
@@ -1745,6 +1746,7 @@ nav a:hover {
   font-size: 1rem;
 }
 #home-cursor {
+  width: 1%;
   top: 67%;
   left: 42%;
   width: 60%;
