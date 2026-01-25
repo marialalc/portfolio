@@ -382,7 +382,7 @@ nav a:hover {
   border: 1px solid #858585;
   padding: 4px 16px;
   border-radius: 50px;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 .home-icons {
   position: absolute;
@@ -1724,9 +1724,12 @@ nav a:hover {
 
 /*-- HOME --*/
 #hero {
-  height: 320px;
+  height: 360px;
   position: relative;
   overflow: hidden;
+}
+#hero h1 {
+  font-size: 2.2rem;
 }
 #hero .container-medium {
   display: flex;
@@ -1745,8 +1748,9 @@ nav a:hover {
   pointer-events: none;
 }
 .hero-pill {
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
+
 #home-cursor {
   width: 50%;
   top: 67%;
@@ -1764,7 +1768,7 @@ nav a:hover {
 }
 #icon-arrow {
   top: -7%;
-  left: -6%;
+  left: -5%;
   scale: .8;
 }
 #icon-star {
